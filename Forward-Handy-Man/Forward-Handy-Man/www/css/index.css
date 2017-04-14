@@ -53,11 +53,12 @@ h1{
     float:left;
     clear:left;
 }
-/*#mainDiv
+mainDiv
 {
     position:relative;
-    position:
-}*/
+    height:100%;
+    width:100%;
+}
 .app {
    /* background: url(../images/cordova.png) no-repeat center top;*/ 
     position: absolute;             
