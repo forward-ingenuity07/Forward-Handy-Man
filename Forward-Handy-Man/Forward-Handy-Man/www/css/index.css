@@ -41,24 +41,10 @@ h1{
     background-color:black;
    float:left;
 }
-.app2{
-    height:33%;
-    background-color:black;
-    float:left;
-    clear:left;
-}
-.app3{
-    height:33%;
-    background-color:black;
-    float:left;
-    clear:left;
-}
-mainDiv
-{
-    position:relative;
-    height:100%;
-    width:100%;
-}
+.app1 { width: 50%; height: 50%; float: left; }
+#div1 { background: #DDD; }
+#div2 { background: #AAA; }
+#div3 { background: #777; }
 .app {
    /* background: url(../images/cordova.png) no-repeat center top;*/ 
     position: absolute;             
