@@ -53,6 +53,10 @@ h1{
     padding: 180px 0px 0px 0px;     
     margin: -115px 0px 0px -112px;
 }
+p
+{
+    color:white;
+}
 .testDiv
 {
     position: absolute;             
