@@ -6,7 +6,7 @@
 
 (function () {
     "use strict";
-
+    
     document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
 
     function onDeviceReady() {
@@ -26,15 +26,15 @@
         var mins = today.getMinutes();
         if (hous < 12)
         {
-            alert('Good morning Mr Kafwilo');
+            swal('Good morning Mr Kafwilo');
         }
         else if (hous >= 12 && hous < 18)
         {
-            alert('Good afternoon Mr Kafwilo');
+            swal('Good afternoon Mr Kafwilo');
         }
         else if (hous >= 18)
         {
-            alert('Good evening Mr Kafwilo');
+            swal('Good evening Mr Kafwilo');
         }
              
         /*document.getElementById('Checking').onclick = function () {
@@ -64,7 +64,7 @@
             today = mm + '/' + dd + '/' + yyyy;
 
 
-            alert("Today's date is: " + today + "\n" +"The time is: "+ hou+":"+min);
+            swal("Today's date is: " + today + "\n" +"The time is: "+ hou+":"+min);
 
         }
     };
