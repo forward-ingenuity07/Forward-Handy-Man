@@ -22,14 +22,22 @@ goog.require('goog.dom');
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        document.getElementById('Checking').onclick = function () {
+        /*document.getElementById('Checking').onclick = function () {
             function sayHi() {
                 var newHeader = goog.dom.createDom('p', { 'style': 'color:white' },
                   'Hello world!');
                 goog.dom.appendChild(document.getElementById('ThisPar'), newHeader);
             };
 
-        };
+        };*/
+
+        //goog.require('goog.dom');
+
+        function sayHi() {
+            var newHeader = goog.dom.createDom('h1', { 'style': 'background-color:#EEE' },
+              'Hello world!');
+            goog.dom.appendChild(document.body, newHeader);
+        }
     };
 
     function onPause() {
