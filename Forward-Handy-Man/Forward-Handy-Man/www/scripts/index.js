@@ -24,10 +24,10 @@ goog.require('goog.dom');
 
         document.getElementById('Checking').onclick = function () {
             function sayHi() {
-                var newHeader = goog.dom.createDom('h1', { 'style': 'background-color:#EEE' },
+                var newHeader = goog.dom.createDom('p', { 'style': 'color:white' },
                   'Hello world!');
                 goog.dom.appendChild(document.getElementById('ThisPar'), newHeader);
-            }
+            };
 
         };
     };

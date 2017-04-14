@@ -31,6 +31,12 @@ body {
     font-size:12px;
 }
 
+h1{
+
+    color:white;
+
+}
+
 .app {
     background: url(../images/cordova.png) no-repeat center top; 
     position: absolute;             
