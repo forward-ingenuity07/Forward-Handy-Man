@@ -36,7 +36,11 @@
         {
             swal('Good evening Mr Kafwilo');
         }
-        swal(window.screen.height);
+        document.getElementById('check') = function () {
+            scr = window.screen.height;
+            alert(scr);
+
+        }
              
         /*document.getElementById('Checking').onclick = function () {
             function sayHi() {
