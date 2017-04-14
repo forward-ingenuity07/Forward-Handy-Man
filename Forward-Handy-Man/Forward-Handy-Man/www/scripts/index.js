@@ -38,7 +38,7 @@
         }
         document.getElementById('check') = function () {
             scr = window.screen.height;
-            alert(scr);
+            swal(scr);
 
         }
              
