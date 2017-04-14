@@ -40,7 +40,7 @@ h1{
     height:33%;
     width:100%;
     text-align:center;
-    padding: 180px 0px 0px 0px;     
+    padding: 100% 100% 100% 100%;     
     margin: -115px 0px 0px -112px;
 
 }
@@ -49,7 +49,7 @@ h1{
     top:33%;
     height:33%;
     width:100%;
-    padding: 180px 0px 0px 0px;     
+    padding: 100% 100% 100% 100%;     
     margin: -115px 0px 0px -112px;
 }
 .app3{
@@ -57,7 +57,7 @@ h1{
     top:66%;
     height:33%;
     width:100%;
-    padding: 180px 0px 0px 0px;     
+    padding: 100% 100% 100% 100%;     
     margin: -115px 0px 0px -112px;
 }
 /*#mainDiv
