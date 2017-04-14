@@ -16,15 +16,28 @@
         <title>ForwardHandyMan</title>
     </head>
     <body  >
-        <script src="scripts/closure-library-master/closure/goog/base.js"></script>
-        <div class="app">
-            <h1>FORWARD-HANDI-MAN</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div id="mainDiv">
+            <div class="app1">
+                <a class="refs" href="schedule.html">Schedule</a>
             </div>
-            <p><input type="button" id="Checking" value="Press Here"/></p>
-            <p id="ThisPar">Click the above button</p>
+            <div class="app2">
+                <a class="refs" href="UpcomingEvents.html">Upcoming Events</a>
+            </div>
+
+            <div class="app3">
+                <a class="refs" href="Maps.html">Maps</a>
+            </div>
+            <div class="app">
+                <h1>FORWARD-HANDI-MAN</h1>
+                <p><input type="button" id="Checking" value="Press Here" /></p>
+                <p id="ThisPar">Click the above button</p>
+            </div>
+            <div class="app4">
+                <div id="deviceready" class="blink">
+                    <p class="event listening">Connecting to Device</p>
+                    <p class="event received">Device is Ready</p>
+                </div>
+            </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="scripts/platformOverrides.js"></script>

@@ -36,9 +36,37 @@ h1{
     color:white;
 
 }
+.app1{
+    height:33%;
+    width:100%;
+    text-align:center;
+    padding: 180px 0px 0px 0px;     
+    margin: -115px 0px 0px -112px;
 
+}
+.app2{
+    text-align:center;
+    top:33%;
+    height:33%;
+    width:100%;
+    padding: 180px 0px 0px 0px;     
+    margin: -115px 0px 0px -112px;
+}
+.app3{
+    text-align:center;
+    top:66%;
+    height:33%;
+    width:100%;
+    padding: 180px 0px 0px 0px;     
+    margin: -115px 0px 0px -112px;
+}
+/*#mainDiv
+{
+    position:relative;
+    position:
+}*/
 .app {
-    background: url(../images/cordova.png) no-repeat center top; 
+   /* background: url(../images/cordova.png) no-repeat center top;*/ 
     position: absolute;             
     left: 50%;
     top: 50%;
