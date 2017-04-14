@@ -3,7 +3,7 @@
 // To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
 // and then run "window.location.reload()" in the JavaScript Console.
 
-goog.require('goog.dom');
+
 (function () {
     "use strict";
 
@@ -32,11 +32,16 @@ goog.require('goog.dom');
         };*/
 
         //goog.require('goog.dom');
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;//January is 0, so always add + 1
+        var yyyy = today.getFullYear();
+        if (dd < 10) { dd = '0' + dd }
+        if (mm < 10) { mm = '0' + mm }
+        today = mm + '/' + dd + '/' + yyyy;
+        document.getElementById('Checking').onclick= function() {
+            alert("Today's date is: "+ today)
 
-        function sayHi() {
-            var newHeader = goog.dom.createDom('h1', { 'style': 'background-color:#EEE' },
-              'Hello world!');
-            goog.dom.appendChild(document.body, newHeader);
         }
     };
 
