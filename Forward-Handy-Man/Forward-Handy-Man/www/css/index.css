@@ -37,28 +37,21 @@ h1{
 
 }
 .app1{
-    height:33%;
-    width:100%;
-    text-align:center;
-    padding: 100% 100% 100% 100%;     
-    margin: -115px 0px 0px -112px;
-
+    height:30px;
+    background-color:black;
+   float:left;
 }
 .app2{
-    text-align:center;
-    top:33%;
-    height:33%;
-    width:100%;
-    padding: 100% 100% 100% 100%;     
-    margin: -115px 0px 0px -112px;
+    height:30px;
+    background-color:black;
+    float:left;
+    clear:left;
 }
 .app3{
-    text-align:center;
-    top:66%;
-    height:33%;
-    width:100%;
-    padding: 100% 100% 100% 100%;     
-    margin: -115px 0px 0px -112px;
+    height:30px;
+    background-color:black;
+    float:left;
+    clear:left;
 }
 /*#mainDiv
 {
