@@ -6,7 +6,8 @@
 (function () {
     "use strict";
     
-    document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
+    document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+
 
     function onDeviceReady() {
         //    alert('G')
@@ -15,42 +16,21 @@
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
-        
-        var firstime = new Date().setHours(0, 0, 0, 0);
-        firstTime = new Date().getTime();
-        if(window.localStorage.getItem('firstTime') == null){
-            window.localStorage.setItem('firstTime', firstTime);
-        }
-
-        else {
-
-            var storedTime = window.localStorage.getItem('firstTime');
-
-            // Get a new date, zero it as above and see if its the same time
-            // If not, it must be a different day
-            var secondTime = new Date().setHours(0, 0, 0, 0)
-
-            if (secondTime != +firstTime) {
-   //             alert("Second time is a different day");
-
+        var count
+        if (count != 0) {
+            if (hous < 12) {
+                count = 0;
+                swal('Good morning Mr Kafwilo');
             }
-
-            else {
-                if (hous < 12) {
-                    swal('Good morning Mr Kafwilo');
-                }
-                else if (hous >= 12 && hous < 18) {
-                    swal('Good afternoon Mr Kafwilo');
-                }
-                else if (hous >= 18) {
-                    swal('Good evening Mr Kafwilo');
-                }
-
- //               alert("First time is the same day");
+            else if (hous >= 12 && hous < 18) {
+                count = 0;
+                swal('Good afternoon Mr Kafwilo');
+            }
+            else if (hous >= 18) {
+                count = 0;
+                swal('Good evening Mr Kafwilo');
             }
         }
-        
-        
         document.getElementById('ButSchedule').onclick = function () {
 
             // alert('Displaying schedule');
