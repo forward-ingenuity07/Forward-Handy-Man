@@ -2,7 +2,7 @@
 // http://go.microsoft.com/fwlink/?LinkID=397704
 // To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
 // and then run "window.location.reload()" in the JavaScript Console.
-stop'xd'
+
 (function () {
     "use strict";
     
@@ -19,7 +19,7 @@ stop'xd'
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
         listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        receivedElement.setAttribute('style', 'display:none;');
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
