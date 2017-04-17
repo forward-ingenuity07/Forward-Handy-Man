@@ -17,19 +17,19 @@
         var hous = today.getHours();
         var mins = today.getMinutes();
         var count;
-       
+        
   
         if (count != 0) {
             if (hous < 12) {
-                count = 0;
+                window.localStorage.setItem(count, '0');
                 swal('Good morning Mr Kafwilo');
             }
             else if (hous >= 12 && hous < 18) {
-                count = 0;
+                window.localStorage.setItem(count, '0');
                 swal('Good afternoon Mr Kafwilo');
             }
             else if (hous >= 18) {
-                count = 0;
+                window.localStorage.setItem(count, '0');
                 swal('Good evening Mr Kafwilo');
             }
         }
