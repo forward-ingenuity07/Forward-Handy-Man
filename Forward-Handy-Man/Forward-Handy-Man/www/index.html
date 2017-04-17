@@ -6,11 +6,14 @@
         For details, see http://go.microsoft.com/fwlink/?LinkID=617521
     -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <script src="scripts/sweetalert.min.js"></script>
         <link rel="stylesheet" type="text/css" href="scripts/sweetalert.css">
       
@@ -18,23 +21,26 @@
         <title>ForwardHandyMan</title>
     </head>
     <body>
-        <div class="testDiv">
-            <p id="sect"></p>
+        <div class="container">
+
+            <a href="#" class="btn btn-default" role="button">Link</a>
 
         </div>
-          <  <div class="app">
-                 <div id="deviceready" class="blink">
-                     <p class="event listening">Connecting to Device</p>
-                     <p class="event received">Device is Ready</p>
-                 </div>
+        <div class="container">
+            <div class="app">
+                <div id="deviceready" class="blink">
+                    <p class="event listening">Connecting to Device</p>
+                    <p class="event received">Device is Ready</p>
+                </div>
                 <h1>FORWARD-HANDI-MAN</h1>
-                <p><input type="button" id="Checking" value="Press Here" /></p>
-        <p><input type="button" id="check" value="check screen"/></p>
-                <p id="ThisPar">Click the above button</p>
             </div>
+        </div>
             
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="scripts/platformOverrides.js"></script>
         <script type="text/javascript" src="scripts/index.js"></script>
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
