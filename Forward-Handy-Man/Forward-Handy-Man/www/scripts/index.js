@@ -21,6 +21,7 @@
         var receivedElement = parentElement.querySelector('.received');
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:none;');
+        alert('here too');
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
