@@ -19,7 +19,7 @@
         var parentElement = document.getElementById('deviceready');
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
-        listeningElement.setAttribute('style', 'display:none;');
+        listeningElement.setAttribute('style', 'display:block;');
         receivedElement.setAttribute('style', 'display:block;');
         var today = new Date();
         var hous = today.getHours();
