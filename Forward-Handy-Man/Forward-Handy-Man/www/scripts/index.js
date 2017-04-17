@@ -16,7 +16,9 @@
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
-        var count
+       
+       
+  
         if (count != 0) {
             if (hous < 12) {
                 count = 0;
@@ -76,10 +78,12 @@
     };
 
     function onPause() {
+        var count = 0;
         // TODO: This application has been suspended. Save application state here.
     };
 
     function onResume() {
+        var count = 0;
         // TODO: This application has been reactivated. Restore application state here.
     };
 } )();
