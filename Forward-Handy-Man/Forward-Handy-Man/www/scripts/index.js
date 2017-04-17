@@ -2,7 +2,7 @@
 // http://go.microsoft.com/fwlink/?LinkID=397704
 // To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
 // and then run "window.location.reload()" in the JavaScript Console.
-
+var count = 0;
 (function () {
     "use strict";
     
@@ -15,30 +15,33 @@
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
-        if (hous < 12) {
-            swal('Good morning Mr Kafwilo');
-        }
-        else if (hous >= 12 && hous < 18) {
-            swal('Good afternoon Mr Kafwilo');
-        }
-        else if (hous >= 18) {
-            swal('Good evening Mr Kafwilo');
+        if (count == 0) {
+            if (hous < 12) {
+                swal('Good morning Mr Kafwilo');
+            }
+            else if (hous >= 12 && hous < 18) {
+                swal('Good afternoon Mr Kafwilo');
+            }
+            else if (hous >= 18) {
+                swal('Good evening Mr Kafwilo');
+            }
         }
         document.getElementById('ButSchedule').onclick = function () {
 
-           // alert('Displaying schedule');
+            // alert('Displaying schedule');
+            count = count + 1;
             location.href = 'practiceFye.html';
 
         }
         document.getElementById('ButEvents').onclick = function () {
-
+            count = count + 1;
             //alert('Displaying Upcoming Events');
             location.href = 'practiceFye.html';
         }
 
 
         document.getElementById('ButMaps').onclick = function () {
-
+            count = count + 1;
             //alert('Displaying Maps');
             location.href = 'practiceFye.html';
         }
