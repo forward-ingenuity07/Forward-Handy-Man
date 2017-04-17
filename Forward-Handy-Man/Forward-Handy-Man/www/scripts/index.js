@@ -36,19 +36,19 @@
         document.getElementById('ButSchedule').onclick = function () {
 
             // alert('Displaying schedule');
-            count = 0;
+           // count = 0;
             location.href = 'practiceFye.html';
 
         }
         document.getElementById('ButEvents').onclick = function () {
-            count = 0;
+            //count = 0;
             //alert('Displaying Upcoming Events');
             location.href = 'practiceFye.html';
         }
 
 
         document.getElementById('ButMaps').onclick = function () {
-            count = 0;
+            //count = 0;
             //alert('Displaying Maps');
             location.href = 'practiceFye.html';
         }
