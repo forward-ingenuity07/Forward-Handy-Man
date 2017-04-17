@@ -26,20 +26,21 @@
         }
         document.getElementById('ButSchedule').onclick = function () {
 
-            alert('Displaying schedule');
+           // alert('Displaying schedule');
+            location.href = 'practiceFye.html';
 
         }
         document.getElementById('ButEvents').onclick = function () {
 
-            alert('Displaying Upcoming Events');
-
+            //alert('Displaying Upcoming Events');
+            location.href = 'practiceFye.html';
         }
 
 
         document.getElementById('ButMaps').onclick = function () {
 
-            alert('Displaying Maps');
-
+            //alert('Displaying Maps');
+            location.href = 'practiceFye.html';
         }
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener('resume', onResume.bind(this), false);
