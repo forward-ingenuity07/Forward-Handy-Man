@@ -2,7 +2,7 @@
 // http://go.microsoft.com/fwlink/?LinkID=397704
 // To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
 // and then run "window.location.reload()" in the JavaScript Console.
-var count = 0;
+
 (function () {
     "use strict";
     
@@ -15,17 +15,42 @@ var count = 0;
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
-        if (count == 0) {
-            if (hous < 12) {
-                swal('Good morning Mr Kafwilo');
+        
+        var firstime = new Date().setHours(0, 0, 0, 0);
+        firstTime = new Date().getTime();
+        if(window.localStorage.getItem('firstTime') == null){
+            window.localStorage.setItem('firstTime', firstTime);
+        }
+
+        else {
+
+            var storedTime = window.localStorage.getItem('firstTime');
+
+            // Get a new date, zero it as above and see if its the same time
+            // If not, it must be a different day
+            var secondTime = new Date().setHours(0, 0, 0, 0)
+
+            if (secondTime != +firstTime) {
+   //             alert("Second time is a different day");
+
             }
-            else if (hous >= 12 && hous < 18) {
-                swal('Good afternoon Mr Kafwilo');
-            }
-            else if (hous >= 18) {
-                swal('Good evening Mr Kafwilo');
+
+            else {
+                if (hous < 12) {
+                    swal('Good morning Mr Kafwilo');
+                }
+                else if (hous >= 12 && hous < 18) {
+                    swal('Good afternoon Mr Kafwilo');
+                }
+                else if (hous >= 18) {
+                    swal('Good evening Mr Kafwilo');
+                }
+
+ //               alert("First time is the same day");
             }
         }
+        
+        
         document.getElementById('ButSchedule').onclick = function () {
 
             // alert('Displaying schedule');
