@@ -16,7 +16,7 @@
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
-       
+        var count;
        
   
         if (count != 0) {
@@ -36,19 +36,19 @@
         document.getElementById('ButSchedule').onclick = function () {
 
             // alert('Displaying schedule');
-            count = count + 1;
+            count = 0;
             location.href = 'practiceFye.html';
 
         }
         document.getElementById('ButEvents').onclick = function () {
-            count = count + 1;
+            count = 0;
             //alert('Displaying Upcoming Events');
             location.href = 'practiceFye.html';
         }
 
 
         document.getElementById('ButMaps').onclick = function () {
-            count = count + 1;
+            count = 0;
             //alert('Displaying Maps');
             location.href = 'practiceFye.html';
         }
