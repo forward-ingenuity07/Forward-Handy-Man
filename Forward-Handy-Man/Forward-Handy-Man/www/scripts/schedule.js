@@ -1,5 +1,5 @@
 ﻿(function () {
-    function clickCounter() {
+    document.getElementById('ButSub').onclick= function(){
         if (typeof (Storage) !== "undefined") {
             if (localStorage.clickcount) {
                 alert('Submitted');
