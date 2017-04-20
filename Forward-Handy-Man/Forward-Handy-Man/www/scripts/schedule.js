@@ -1,5 +1,5 @@
 ﻿(function () {
-var Naam;
+
 document.getElementById('ButSub').onclick=function()
 {
     var Naam = document.getElementById('Naming');
