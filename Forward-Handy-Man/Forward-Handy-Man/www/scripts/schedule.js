@@ -1,19 +1,16 @@
 ﻿(function () {
-
-document.getElementById('ButSub').onclick=function()
-{
-    alert('Submitted');
-    var Naam = document.getElementById('Naming');
-    if (typeof (Storage) !== "undefined") {
-        // Store
-        window.localStorage.setItem('lastname',Naam)
-        // Retrieve
-        
-        document.getElementById("result").innerHTML = window.localStorage.getItem('lastname');
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    function clickCounter() {
+        if (typeof (Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                alert('Submitted');
+                localStorage.clickcount = document.getElementById('Naming');
+            } else {
+                localStorage.clickcount = '1';
+            }
+            document.getElementById("result").innerHTML = localStorage.clickcount;
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
     }
-}
-
 
 })();
