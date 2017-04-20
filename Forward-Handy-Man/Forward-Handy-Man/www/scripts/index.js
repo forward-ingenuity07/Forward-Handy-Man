@@ -16,36 +16,13 @@
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
-        var something = (function () {
-            var executed = false;
-            return function () {
-                if (!executed) {
-                    executed = true;
-
-                    if (hous < 12) {
-                        window.localStorage.setItem(count, '0');
-                        swal('Good morning Mr Kafwilo');
-                    }
-                    else if (hous >= 12 && hous < 18) {
-                        window.localStorage.setItem(count, '0');
-                        swal('Good afternoon Mr Kafwilo');
-                    }
-                    else if (hous >= 18) {
-                        window.localStorage.setItem(count, '0');
-                        swal('Good evening Mr Kafwilo');
-                    }
-
-                    // do something
-                }
-            };
-        })();
-  
+     
         
         document.getElementById('ButSchedule').onclick = function () {
 
             // alert('Displaying schedule');
            // count = 0;
-            location.href = 'practiceFye.html';
+            location.href = 'schedule.html';
 
         }
         document.getElementById('ButEvents').onclick = function () {
@@ -85,6 +62,32 @@
         
     };
 
+
+    var something = (function () {
+        var executed = false;
+        return function () {
+            if (!executed) {
+                executed = true;
+
+                if (hous < 12) {
+                    window.localStorage.setItem(count, '0');
+                    swal('Good morning Mr Kafwilo');
+                }
+                else if (hous >= 12 && hous < 18) {
+                    window.localStorage.setItem(count, '0');
+                    swal('Good afternoon Mr Kafwilo');
+                }
+                else if (hous >= 18) {
+                    window.localStorage.setItem(count, '0');
+                    swal('Good evening Mr Kafwilo');
+                }
+
+                // do something
+            }
+        };
+    })();
+
+
     function onPause() {
         var count = 0;
         // TODO: This application has been suspended. Save application state here.
@@ -94,4 +97,5 @@
         var count = 0;
         // TODO: This application has been reactivated. Restore application state here.
     };
-} )();
+})();
+
