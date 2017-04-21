@@ -1,16 +1,22 @@
 ﻿(function () {
-    document.getElementById('ButSub').onclick= function(){
-        if (typeof (Storage) !== "undefined") {
-            if (localStorage.clickcount) {
-                alert('Submitted');
-                localStorage.clickcount = document.getElementById('Naming');
-            } else {
-                localStorage.clickcount = '1';
-            }
-            document.getElementById("result").innerHTML = localStorage.clickcount;
-        } else {
-            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-        }
+
+document.getElementById('ButSub').onclick=function()
+{
+    alert('Submitted');
+    var Naam = document.getElementById('Naming');
+    if (typeof (Storage) !== "undefined") {
+        // Store
+        window.localStorage.setItem('Naming', Naam.value);
+        // Retrieve
+        
+        
     }
+    else
+    {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+    document.getElementById("result").innerHTML = window.localStorage.getItem('Naming');
+}
+
 
 })();
