@@ -31,6 +31,10 @@ body {
     font-size:12px;
 }
 
+.white, .white a {
+  color: #fff;
+}
+
 h1{
 
     color:white;
@@ -147,6 +151,7 @@ h1 {
   -ms-transform-origin: 50% 50%;
   -ms-animation-fill-mode:forwards; /*IE 10+*/
 }
+
 
 @keyframes animationFrames{
   0% {
