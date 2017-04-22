@@ -37,6 +37,12 @@
             //alert('Displaying Maps');
             location.href = 'practiceFye.html';
         }
+
+        document.getElementById('ButExit').onclick = function () {
+            //count = 0;
+            //alert('Displaying Maps');
+            document.close();
+        }
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener('resume', onResume.bind(this), false);
         

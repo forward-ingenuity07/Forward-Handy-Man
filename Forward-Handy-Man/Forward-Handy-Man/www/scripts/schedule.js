@@ -18,6 +18,13 @@ document.getElementById('ButSub').onclick=function()
     }*/
     
 }
+
+    document.getElementById('back').onclick=function()
+{
+        window.close();
+        location.href = 'index.html';
+       
+}
 document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 
 })();
