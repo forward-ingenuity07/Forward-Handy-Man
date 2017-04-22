@@ -18,6 +18,6 @@ document.getElementById('ButSub').onclick=function()
     }*/
     
 }
-document.getElementById("result").innerHTML = window.localStorage.getItem('Naming');
+document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 
 })();
