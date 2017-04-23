@@ -13,11 +13,29 @@
         //    alert('G')
         //swal('Working');
         // Handle the Cordova pause and resume events
+        
         var today = new Date();
         var hous = today.getHours();
         var mins = today.getMinutes();
-     
         
+       
+        if (window.localStorage.getItem('count') != '1')
+            {
+        if (hous < 12) {
+            window.localStorage.setItem('count', '1');
+            swal('Good morning Mr Kafwilo');
+        }
+        else if (hous >= 12 && hous < 18) {
+            window.localStorage.setItem('count', '1');
+            swal('Good afternoon Mr Kafwilo');
+        }
+        else if (hous >= 18) {
+            window.localStorage.setItem('count', '1');
+            swal('Good evening Mr Kafwilo');
+        }
+        }
+        
+
         document.getElementById('ButSchedule').onclick = function () {
 
             // alert('Displaying schedule');
@@ -64,30 +82,6 @@
         
     };
 
-
-    var something = (function () {
-        var executed = false;
-        return function () {
-            if (!executed) {
-                executed = true;
-
-                if (hous < 12) {
-                    window.localStorage.setItem(count, '0');
-                    swal('Good morning Mr Kafwilo');
-                }
-                else if (hous >= 12 && hous < 18) {
-                    window.localStorage.setItem(count, '0');
-                    swal('Good afternoon Mr Kafwilo');
-                }
-                else if (hous >= 18) {
-                    window.localStorage.setItem(count, '0');
-                    swal('Good evening Mr Kafwilo');
-                }
-
-                // do something
-            }
-        };
-    })();
 
 
     function onPause() {
