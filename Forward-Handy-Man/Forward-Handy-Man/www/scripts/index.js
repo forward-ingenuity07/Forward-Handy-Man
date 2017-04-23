@@ -15,9 +15,15 @@
         // Handle the Cordova pause and resume events
         
         var today = new Date();
+        var day = today.getDay();
         var hous = today.getHours();
         var mins = today.getMinutes();
-        
+        window.localStorage.setItem('new_date', day.value);
+        if (window.localStorage.getItem('new_date') != window.localStorage.getItem('old_date'))
+        {
+            window.localStorage.setItem('old_date', window.localStorage.getItem('new_date').value);
+            window.localStorage.setItem('count', '0');
+        }
        
         if (window.localStorage.getItem('count') != '1')
             {
