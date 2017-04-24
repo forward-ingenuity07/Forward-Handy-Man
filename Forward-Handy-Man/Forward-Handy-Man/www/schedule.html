@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>-->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#myModal" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-modal-lg" aria-expanded="false">
                         <span class="glyphicon glyphicon-plus white"></span>
                     </button> 
                     <a class="navbar-brand" href="index.html" role="button" id="back"><span class="glyphicon glyphicon-chevron-left"></span>Return to Home</a>
@@ -53,77 +53,67 @@
                         </li>
                     </ul>
                 </div> -->
-                
-            <!--        <div class="container modal fade-in bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="container">          
+                    <div class="container modal fade-in bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                         <div class="container" style="top:70%; left:20%; position:fixed;">
                             <div class="modal-dialog modal-sm" role="document">
                                 <div class="modal-content">
-                                    Form Begins inside modal box
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text" class="form-control" placeholder="Add Name" id="Naming">
-                                        </div>
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                    </div>
+                                    <!--Form Begins inside modal box-->
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control" placeholder="Add Name" id="Naming">
+                                            </div>
 
-                                       <!-- <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" class="form-control" placeholder="Add Email">
-                                        </div>
+                                            <!-- <div class="form-group">
+                 <label>Email</label>
+                 <input type="email" class="form-control" placeholder="Add Email">
+             </div>
 
-                                        <div class="form-group">
-                                            <label>Message</label>
-                                            <textarea class="form-control" placeholder="Add Message"></textarea>
-                                        </div>
+             <div class="form-group">
+                 <label>Message</label>
+                 <textarea class="form-control" placeholder="Add Message"></textarea>
+             </div>
 
-                                        <div class="form-group">
-                                            <label>Gender</label>
-                                            <select class="form-control">
-                                                <option value="male">Male</option>
-                                                <option value="female">Female</option>
-                                                <option value="other">Other</option>
-                                            </select>
-                                        </div>
+             <div class="form-group">
+                 <label>Gender</label>
+                 <select class="form-control">
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                     <option value="other">Other</option>
+                 </select>
+             </div>
 
-                                        <div class="form-group">
-                                            <label>Upload File</label>
-                                            <input type="file">
-                                            <p class="help-block">Only png and jpg allowed</p>
-                                        </div>
+             <div class="form-group">
+                 <label>Upload File</label>
+                 <input type="file">
+                 <p class="help-block">Only png and jpg allowed</p>
+             </div>
 
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Check me out
-                                            </label>
-                                        </div>
+             <div class="checkbox">
+                 <label>
+                     <input type="checkbox"> Check me out
+                 </label>
+             </div>-->
 
-                                        <button type="submit" class="btn btn-default" id="ButSub">Submit</button>
-                                    </form>
-                                </div>
+                                            <button type="submit" class="btn btn-default" id="ButSub">Submit</button>
+                                        </form>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                 </div>
-                -->
 
+                </div>
             </div><!-- /.container-fluid -->
         </nav>
 
-        <div class="modal fade-in" id="myModal" style="top:70%; left:20%; z-index:100;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
 
 
