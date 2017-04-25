@@ -28,3 +28,48 @@ document.getElementById('ButSub').onclick=function()
 document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 
 })();
+
+var timer, fullText, currentOffset, onComplete, wordSet;
+
+function Speak(person, text, callback) {
+    $("#name").html(person);
+    fullText = text;
+    wordSet = text.split(" ");
+    currentOffset = 0;
+    onComplete = callback;
+    timer = setInterval(onTick, 300);
+}
+
+function onTick() {
+    currentOffset++;
+    if (currentOffset == wordSet.length) {
+        complete();
+        return;
+    }
+    var text = "";
+    for (var i = 0; i < currentOffset; i++) {
+        text += wordSet[i] + " ";
+    }
+    text.trim();
+    $("#message").html(text);
+}
+
+function complete() {
+    clearInterval(timer);
+    timer = null;
+    $("#message").html(fullText);
+    if (onComplete) onComplete();
+}
+
+$(".box").click(function () {
+    complete();
+});
+
+Speak("Simon",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+function () {
+    setTimeout(function () {
+        Speak("Javascript", "Simon has finished speaking!");
+    }, 2000);
+});
