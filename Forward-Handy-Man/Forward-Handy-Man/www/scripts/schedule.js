@@ -38,7 +38,7 @@ function Speak(person, text, callback) {
     wordSet = text.split('');
     currentOffset = 0;
     onComplete = callback;
-    timer = setInterval(onTick, 177);
+    timer = setInterval(onTick, 107);
 }
 
 function onTick() {
