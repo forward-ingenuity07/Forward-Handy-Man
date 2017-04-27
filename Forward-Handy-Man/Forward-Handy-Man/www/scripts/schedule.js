@@ -32,7 +32,7 @@ document.getElementById("first_elem").innerHTML = window.localStorage.getItem('N
 var timer, fullText, currentOffset, onComplete, wordSet;
 
 function Speak(person, text, callback) {
-    $("#name").html(person);
+    //$("#name").html(person);
     fullText = text;
     wordSet = text.split(" ");
     currentOffset = 0;
@@ -61,9 +61,9 @@ function complete() {
     if (onComplete) onComplete();
 }
 
-$(".box").click(function () {
+/*$(".box").click(function () {
     complete();
-});
+});*/
 
 Speak("Simon",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
