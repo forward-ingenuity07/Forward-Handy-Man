@@ -49,7 +49,9 @@ function onTick() {
     }
     var text = "";
     for (var i = 0; i < currentOffset; i++) {
-        text += wordSet[i] + " ";
+        
+            text += wordSet[i];
+            
     }
     text.trim();
     $("#message").html(text);
