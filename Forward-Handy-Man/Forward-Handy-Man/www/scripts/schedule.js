@@ -34,7 +34,8 @@ var timer, fullText, currentOffset, onComplete, wordSet;
 function Speak(person, text, callback) {
     //$("#name").html(person);
     fullText = text;
-    wordSet = text.split(" ");
+    
+    wordSet = text.split('');
     currentOffset = 0;
     onComplete = callback;
     timer = setInterval(onTick, 1000);
