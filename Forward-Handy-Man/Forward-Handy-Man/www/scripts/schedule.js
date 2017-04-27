@@ -66,7 +66,7 @@ function complete() {
 });*/
 
 Speak("Simon",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Enter an event below sir",
 
 function () {
     setTimeout(function () {
