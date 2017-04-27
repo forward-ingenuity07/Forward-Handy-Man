@@ -69,7 +69,7 @@ function complete() {
 });*/
 
 Speak("Simon",
-    "         Enter an event below sir"
+    "                     Enter an event below sir"
 /*
 function () {
     setTimeout(function () {
