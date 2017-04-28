@@ -70,7 +70,7 @@
 
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
-            Speak("Chipili","Good morning Mr Kafwilo");
+            Speak("Chipili","Good morning Mr Kafwil");
         }
         else if (hous >= 12 && hous < 18) {
             window.localStorage.setItem('count', '1');
