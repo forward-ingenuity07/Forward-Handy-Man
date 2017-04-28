@@ -70,17 +70,17 @@
 
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
-            //swal('Good morning Mr Kafwilo');
-            Speak("Simon",
-    "Good morning Mr Kafwilo");
+            Speak("Chipili","Good morning Mr Kafwilo");
         }
         else if (hous >= 12 && hous < 18) {
             window.localStorage.setItem('count', '1');
-            swal('Good afternoon Mr Kafwilo');
+            //swal('Good afternoon Mr Kafwilo');
+            Speak("Chipili", "Good afternoon Mr Kafwilo");
         }
         else if (hous >= 18) {
             window.localStorage.setItem('count', '1');
             swal('Good evening Mr Kafwilo');
+            Speak("Chipili", "Good evening Mr Kafwilo");
         }
        // }
         
