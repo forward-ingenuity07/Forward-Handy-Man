@@ -19,13 +19,13 @@
         var hous = today.getHours();
         var mins = today.getMinutes();
         window.localStorage.setItem('new_date', day.value);
-        if (window.localStorage.getItem('new_date') != window.localStorage.getItem('old_date'))
+        if (window.localStorage.getItem('new_date') !== window.localStorage.getItem('old_date'))
         {
             window.localStorage.setItem('old_date', window.localStorage.getItem('new_date').value);
             window.localStorage.setItem('count', '0');
         }
        
-        if (window.localStorage.getItem('count') != '1')
+        if (window.localStorage.getItem('count') !== '1')
             {
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
