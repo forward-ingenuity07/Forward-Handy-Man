@@ -72,7 +72,7 @@
             window.localStorage.setItem('count', '1');
             //swal('Good morning Mr Kafwilo');
             Speak("Simon",
-    "         Good morning Mr Kafwilo");
+    "Good morning Mr Kafwilo");
         }
         else if (hous >= 12 && hous < 18) {
             window.localStorage.setItem('count', '1');
