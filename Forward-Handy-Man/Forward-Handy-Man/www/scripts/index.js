@@ -25,11 +25,54 @@
             window.localStorage.setItem('count', '0');
         }
        
-        if (window.localStorage.getItem('count') !== '1')
-            {
+      //  if (window.localStorage.getItem('count') !== '1')
+        //    {
+
+
+        var timer, fullText, currentOffset, onComplete, wordSet;
+
+        function Speak(person, text, callback) {
+            //$("#name").html(person);
+            fullText = text;
+
+            wordSet = text.split('');
+            currentOffset = 0;
+            onComplete = callback;
+            timer = setInterval(onTick, 107);
+        }
+
+        function onTick() {
+            currentOffset++;
+            if (currentOffset == wordSet.length) {
+                complete();
+                return;
+            }
+            var text = "";
+            for (var i = 0; i < currentOffset; i++) {
+
+                text += wordSet[i];
+
+            }
+            text.trim();
+
+            swal(text);
+
+        }
+
+        function complete() {
+            clearInterval(timer);
+            timer = null;
+
+            $("#message").html(fullText);
+            if (onComplete) onComplete();
+        }
+
+
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
-            swal('Good morning Mr Kafwilo');
+            //swal('Good morning Mr Kafwilo');
+            Speak("Simon",
+    "         Good morning Mr Kafwilo");
         }
         else if (hous >= 12 && hous < 18) {
             window.localStorage.setItem('count', '1');
@@ -39,7 +82,7 @@
             window.localStorage.setItem('count', '1');
             swal('Good evening Mr Kafwilo');
         }
-        }
+       // }
         
 
         document.getElementById('ButSchedule').onclick = function () {
