@@ -31,7 +31,10 @@ body {
     font-size:12px;
 }
 
-
+#message {
+    font-family:Papyrus;
+    font-weight: 400;
+}
 .white, .white a {
   color: #fff;
 }

@@ -55,14 +55,15 @@ function onTick() {
             
     }
     text.trim();
-    $("#message").css("font-family","Comic Sans MS")
+    
     $("#message").html(text);
-    $("#message").css("font-family", "Comic Sans MS")
+    
 }
 
 function complete() {
     clearInterval(timer);
     timer = null;
+    
     $("#message").html(fullText);
     if (onComplete) onComplete();
 }
