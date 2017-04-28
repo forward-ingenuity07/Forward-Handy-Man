@@ -31,6 +31,12 @@ body {
     font-size:12px;
 }
 
+#message
+{
+    font-family:Rockwell;
+    font-weight:400;
+}
+
 .white, .white a {
   color: #fff;
 }

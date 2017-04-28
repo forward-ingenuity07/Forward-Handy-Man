@@ -25,7 +25,7 @@
             window.localStorage.setItem('count', '0');
         }
        
-        if (window.localStorage.getItem('count') !== '1')
+        //if (window.localStorage.getItem('count') !== '1')
             {
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
@@ -39,7 +39,7 @@
             window.localStorage.setItem('count', '1');
             swal('Good evening Mr Kafwilo');
         }
-        }
+        //}
         
 
         document.getElementById('ButSchedule').onclick = function () {
