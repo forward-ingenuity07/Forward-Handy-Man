@@ -48,7 +48,7 @@
                 return;
             }
             var text = "";
-            for (var i = 0; i < currentOffset; i++) {
+            for (var i = 0; i < currentOffse+1; i++) {
 
                 text += wordSet[i];
 
@@ -70,7 +70,7 @@
 
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
-            Speak("Chipili","Good morning Mr Kafwil");
+            Speak("Chipili","Good morning Mr Kafwilo");
         }
         else if (hous >= 12 && hous < 18) {
             window.localStorage.setItem('count', '1');
