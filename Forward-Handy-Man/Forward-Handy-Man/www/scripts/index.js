@@ -48,7 +48,7 @@
                 return;
             }
             var text = "";
-            for (var i = 0; i < currentOffse+1; i++) {
+            for (var i = 0; i < currentOffset+1; i++) {
 
                 text += wordSet[i];
 
