@@ -26,7 +26,7 @@
         }
        
         //if (window.localStorage.getItem('count') !== '1')
-            {
+           // {
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
             swal('Good morning Mr Kafwilo');
