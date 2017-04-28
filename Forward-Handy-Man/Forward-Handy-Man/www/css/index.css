@@ -32,8 +32,9 @@ body {
 }
 
 #message {
-    font-family:Papyrus;
-    font-weight: 400;
+    font-family:'Felix Titling';
+    font-weight: 600;
+    color:aqua;
 }
 .white, .white a {
   color: #fff;
