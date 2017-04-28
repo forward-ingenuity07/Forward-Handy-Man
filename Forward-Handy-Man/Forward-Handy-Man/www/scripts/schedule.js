@@ -22,6 +22,7 @@ document.getElementById('ButSub').onclick=function()
     document.getElementById('back').onclick=function()
 {
         window.close();
+        
         location.href = 'index.html';
        
 }
@@ -54,7 +55,9 @@ function onTick() {
             
     }
     text.trim();
+    $("#message").css("font-family","Comic Sans MS")
     $("#message").html(text);
+    $("#message").css("font-family", "Comic Sans MS")
 }
 
 function complete() {

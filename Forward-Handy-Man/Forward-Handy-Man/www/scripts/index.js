@@ -21,12 +21,12 @@
         window.localStorage.setItem('new_date', day.value);
         if (window.localStorage.getItem('new_date') !== window.localStorage.getItem('old_date'))
         {
-            window.localStorage.setItem('old_date', window.localStorage.getItem('new_date').value);
+            window.localStorage.setItem('old_date', (window.localStorage.getItem('new_date')).value);
             window.localStorage.setItem('count', '0');
         }
        
-        //if (window.localStorage.getItem('count') !== '1')
-           // {
+        if (window.localStorage.getItem('count') !== '1')
+            {
         if (hous < 12) {
             window.localStorage.setItem('count', '1');
             swal('Good morning Mr Kafwilo');
@@ -39,7 +39,7 @@
             window.localStorage.setItem('count', '1');
             swal('Good evening Mr Kafwilo');
         }
-        //}
+        }
         
 
         document.getElementById('ButSchedule').onclick = function () {
