@@ -49,9 +49,15 @@ function onTick() {
         return;
     }
     var text = "";
+    var cur;
     for (var i = 0; i < currentOffset; i++) {
         
-            text += wordSet[i];
+        text += wordSet[i];
+        cur = wordSet[i];
+        
+        wordSet[i] = wordSet[i + 1];
+        wordSet[i + 1] = cur;
+
             
     }
     text.trim();
@@ -73,7 +79,7 @@ function complete() {
 });*/
 
 Speak("Simon",
-    "         Enter an event below sir"
+    "         |Enter an event below sir"
 /*
 function () {
     setTimeout(function () {
