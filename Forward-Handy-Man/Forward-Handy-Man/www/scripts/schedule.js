@@ -12,7 +12,7 @@ document.getElementById('ButSub').onclick=function()
     //Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
     Arr[0] = document.getElementById('Naming');
-    window.localStorage.setItem('Naming', (JSON.stringify(Arr)).value);
+    window.localStorage.setItem('Naming', JSON.stringify(Arr));
     alert('Submitted');
     //var Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
@@ -39,7 +39,7 @@ document.getElementById('ButSub').onclick=function()
     }
     var StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
     
-    document.getElementById("first_elem").innerHTML = StoredArr[0];
+    document.getElementById("first_elem").innerHTML = StoredArr[0].value;
     /*document.getElementById("sec_elem").innerHTML = StoredArr[1];
     document.getElementById("thi_elem").innerHTML = StoredArr[2];
     document.getElementById("fou_elem").innerHTML = StoredArr[3];
