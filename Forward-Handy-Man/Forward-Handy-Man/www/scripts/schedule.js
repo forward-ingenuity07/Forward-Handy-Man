@@ -39,8 +39,8 @@ document.getElementById('ButSub').onclick=function()
         Naam[6] = document.getElementById('Naming');
 
     }
-    window.localStorage.setItem('Naming', JSON.stringify(Naam))
-
+    window.localStorage.setItem('Naming', JSON.stringify(Naam).value);
+    
     alert('Submitted');
     //var Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
