@@ -52,11 +52,7 @@
             for (var i = 0; i < currentOffset+1; i++) {
 
                 text += wordSet[i];
-                if($okButton.click)
-                {
-                    break;
-
-                }
+                
 
             }
             text.trim();
