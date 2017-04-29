@@ -8,9 +8,11 @@
 document.getElementById('ButSub').onclick=function()
 {
     var Naam;
+    var Arr = [];
     Naam = document.getElementById('Naming');
-    window.localStorage.setItem('Naming', Naam.value);
-    
+    //window.localStorage.setItem('Naming', Naam.value);
+    Arr[0] = document.getElementById('Naming');
+    window.localStorage.setItem('Naming', (JSON.stringify(Arr)).value);
     alert('Submitted');
     //var Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
@@ -35,7 +37,7 @@ document.getElementById('ButSub').onclick=function()
         location.href = 'index.html';
        
     }
-    /*StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
+    StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
     
     document.getElementById("first_elem").innerHTML = StoredArr[0];
     document.getElementById("sec_elem").innerHTML = StoredArr[1];
@@ -44,8 +46,8 @@ document.getElementById('ButSub').onclick=function()
     document.getElementById("fif_elem").innerHTML = StoredArr[4];
     document.getElementById("six_elem").innerHTML = StoredArr[5];
     document.getElementById("sev_elem").innerHTML = StoredArr[6];
-    */
-    document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
+    
+    //document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 })();
 
 
