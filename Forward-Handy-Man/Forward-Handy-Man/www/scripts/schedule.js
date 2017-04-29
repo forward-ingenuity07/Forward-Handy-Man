@@ -1,7 +1,36 @@
 ﻿(function () {
+    var chosen_day;
+    var chosen_time;
+    var chosen_title;
+    var index_day;
+    
 
 document.getElementById('ButSub').onclick=function()
 {
+    if (day == "Sunday")
+    {
+        index_day = '0';
+    }
+    else if (day == "Monday") {
+        index_day = '1';
+    }
+    else if (day == "Tuesday") {
+        index_day = '2';
+    }
+    else if (day == "Wednesday") {
+        index_day = '3';
+    }
+    else if (day == "Thursday") {
+        index_day = '4';
+    }
+    else if (day == "Friday") {
+        index_day = '5';
+    }
+    else if (day == "Saturday") {
+        index_day = '6';
+    }
+
+   
     alert('Submitted');
     var Naam = document.getElementById('Naming');
     window.localStorage.setItem('Naming', Naam.value);
@@ -25,9 +54,29 @@ document.getElementById('ButSub').onclick=function()
         
         location.href = 'index.html';
        
-}
-document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
-
+    }
+    if (index_day == '0')
+    {
+            document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
+    }
+    else if (index_day == '1') {
+        document.getElementById("sec_elem").innerHTML = window.localStorage.getItem('Naming');
+    }
+    else if (index_day == '2') {
+        document.getElementById("thi_elem").innerHTML = window.localStorage.getItem('Naming');
+    }
+   else if (index_day == '3') {
+        document.getElementById("fou_elem").innerHTML = window.localStorage.getItem('Naming');
+    }
+    else if (index_day == '4') {
+        document.getElementById("fif_elem").innerHTML = window.localStorage.getItem('Naming');
+    }
+    else if (index_day == '5') {
+        document.getElementById("six_elem").innerHTML = window.localStorage.getItem('Naming');
+    }
+    else if (index_day == '6') {
+        document.getElementById("sev_elem").innerHTML = window.localStorage.getItem('Naming');
+    }
 })();
 document.getElementById('ButPlus').onclick=function(){
 var timer, fullText, currentOffset, onComplete, wordSet;
@@ -49,15 +98,10 @@ function onTick() {
         return;
     }
     var text = "";
-    var cur;
+
     for (var i = 0; i < currentOffset; i++) {
         
-        text += wordSet[i];
-        cur = wordSet[i];
-        
-        wordSet[i] = wordSet[i + 1];
-        wordSet[i + 1] = cur;
-
+            text += wordSet[i];
             
     }
     text.trim();
@@ -79,7 +123,7 @@ function complete() {
 });*/
 
 Speak("Simon",
-    "         |Enter an event below sir"
+    "         Enter an event below sir"
 /*
 function () {
     setTimeout(function () {
