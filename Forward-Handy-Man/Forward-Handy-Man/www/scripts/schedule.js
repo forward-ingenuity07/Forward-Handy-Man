@@ -118,8 +118,8 @@ document.getElementById('ButSub').onclick=function()
         location.href = 'index.html';
        
     }
-    /*StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
-    
+    StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
+    StoredArr[0] = "EMK";
     document.getElementById("first_elem").innerHTML = StoredArr[0];
     document.getElementById("sec_elem").innerHTML = StoredArr[1];
     document.getElementById("thi_elem").innerHTML = StoredArr[2];
@@ -127,5 +127,5 @@ document.getElementById('ButSub').onclick=function()
     document.getElementById("fif_elem").innerHTML = StoredArr[4];
     document.getElementById("six_elem").innerHTML = StoredArr[5];
     document.getElementById("sev_elem").innerHTML = StoredArr[6];
-    */
+    
 })();
