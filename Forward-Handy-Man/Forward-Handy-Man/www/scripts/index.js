@@ -42,6 +42,7 @@
         }
 
         function onTick() {
+            //Function controls the rate at which the letters are being printed
             currentOffset++;
             if (currentOffset == wordSet.length) {
                 complete();
@@ -51,7 +52,7 @@
             for (var i = 0; i < currentOffset+1; i++) {
 
                 text += wordSet[i];
-                if(button.confirm)
+                if($okButton.click)
                 {
                     break;
 
