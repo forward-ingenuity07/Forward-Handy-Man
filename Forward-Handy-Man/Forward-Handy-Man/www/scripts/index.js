@@ -51,6 +51,11 @@
             for (var i = 0; i < currentOffset+1; i++) {
 
                 text += wordSet[i];
+                if(button.confirm)
+                {
+                    break;
+
+                }
 
             }
             text.trim();
