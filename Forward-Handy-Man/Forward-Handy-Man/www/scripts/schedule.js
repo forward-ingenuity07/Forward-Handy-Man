@@ -2,38 +2,48 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    
+    var index_day = [];
     
 
 document.getElementById('ButSub').onclick=function()
 {
-    if (day == "Sunday")
+    var Naam
+    if (day_chosen == 'Sunday')
     {
-        window.localStorage.setItem('index_day', '0');
-    }
-    else if (day == "Monday") {
-        window.localStorage.setItem('index_day', '1');
-    }
-    else if (day == "Tuesday") {
-        window.localStorage.setItem('index_day', '2');
-    }
-    else if (day == "Wednesday") {
-        window.localStorage.setItem('index_day', '3');
-    }
-    else if (day == "Thursday") {
-        window.localStorage.setItem('index_day', '4');
-    }
-    else if (day == "Friday") {
-        window.localStorage.setItem('index_day', '5');
-    }
-    else if (day == "Saturday") {
-        window.localStorage.setItem('index_day', '6');
+        Naam[0] = document.getElementById('Naming');
+
     }
 
-   
+    else if (day_chosen == 'Monday') {
+        Naam[1] = document.getElementById('Naming');
+
+    }
+
+    else if (day_chosen == 'Tuesday') {
+        Naam[2] = document.getElementById('Naming');
+
+    }
+    else if (day_chosen == 'Wednesday') {
+        Naam[3] = document.getElementById('Naming');
+
+    }
+    else if (day_chosen == 'Thursday') {
+        Naam[4] = document.getElementById('Naming');
+
+    }
+    else if (day_chosen == 'Friday') {
+        Naam[5] = document.getElementById('Naming');
+
+    }
+    else if (day_chosen == 'Saturday') {
+        Naam[6] = document.getElementById('Naming');
+
+    }
+    window.localStorage.setItem('Naming', JSON.stringify(Naam))
+
     alert('Submitted');
-    var Naam = document.getElementById('Naming');
-    window.localStorage.setItem('Naming', Naam.value);
+    //var Naam = document.getElementById('Naming');
+    //window.localStorage.setItem('Naming', Naam.value);
     /*if (typeof (Storage) !== "undefined") {
         // Store
         
@@ -55,28 +65,16 @@ document.getElementById('ButSub').onclick=function()
         location.href = 'index.html';
        
     }
-    if (index_day == '0')
-    {
-            document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
-    }
-    else if (index_day == '1') {
-        document.getElementById("sec_elem").innerHTML = window.localStorage.getItem('Naming');
-    }
-    else if (index_day == '2') {
-        document.getElementById("thi_elem").innerHTML = window.localStorage.getItem('Naming');
-    }
-   else if (index_day == '3') {
-        document.getElementById("fou_elem").innerHTML = window.localStorage.getItem('Naming');
-    }
-    else if (index_day == '4') {
-        document.getElementById("fif_elem").innerHTML = window.localStorage.getItem('Naming');
-    }
-    else if (index_day == '5') {
-        document.getElementById("six_elem").innerHTML = window.localStorage.getItem('Naming');
-    }
-    else if (index_day == '6') {
-        document.getElementById("sev_elem").innerHTML = window.localStorage.getItem('Naming');
-    }
+    StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
+    
+    document.getElementById("first_elem").innerHTML = StoredArr[0];
+    document.getElementById("sec_elem").innerHTML = StoredArr[1];
+    document.getElementById("thi_elem").innerHTML = StoredArr[2];
+    document.getElementById("fou_elem").innerHTML = StoredArr[3];
+    document.getElementById("fif_elem").innerHTML = StoredArr[4];
+    document.getElementById("six_elem").innerHTML = StoredArr[5];
+    document.getElementById("sev_elem").innerHTML = StoredArr[6];
+
 })();
 document.getElementById('ButPlus').onclick=function(){
 var timer, fullText, currentOffset, onComplete, wordSet;
