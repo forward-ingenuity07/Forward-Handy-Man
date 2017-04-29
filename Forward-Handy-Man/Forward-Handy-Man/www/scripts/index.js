@@ -38,7 +38,7 @@
             wordSet = text.split('');
             currentOffset = 0;
             onComplete = callback;
-            timer = setInterval(onTick, 107);
+            timer = setInterval(onTick, 77);
         }
 
         function onTick() {
