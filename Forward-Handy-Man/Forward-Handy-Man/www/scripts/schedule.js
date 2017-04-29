@@ -119,8 +119,8 @@ document.getElementById('ButSub').onclick=function()
        
     }
     StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
-    StoredArr[0] = "EMK";
-    document.getElementById("first_elem").innerHTML = StoredArr[0];
+    StoredArr[1] = "EMK";
+    document.getElementById("first_elem").innerHTML = "EMK310";
     document.getElementById("sec_elem").innerHTML = StoredArr[1];
     document.getElementById("thi_elem").innerHTML = StoredArr[2];
     document.getElementById("fou_elem").innerHTML = StoredArr[3];
