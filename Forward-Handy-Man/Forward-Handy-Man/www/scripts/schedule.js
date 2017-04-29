@@ -2,32 +2,32 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    var index_day;
+    
     
 
 document.getElementById('ButSub').onclick=function()
 {
     if (day == "Sunday")
     {
-        index_day = '0';
+        window.localStorage.setItem('index_day', '0');
     }
     else if (day == "Monday") {
-        index_day = '1';
+        window.localStorage.setItem('index_day', '1');
     }
     else if (day == "Tuesday") {
-        index_day = '2';
+        window.localStorage.setItem('index_day', '2');
     }
     else if (day == "Wednesday") {
-        index_day = '3';
+        window.localStorage.setItem('index_day', '3');
     }
     else if (day == "Thursday") {
-        index_day = '4';
+        window.localStorage.setItem('index_day', '4');
     }
     else if (day == "Friday") {
-        index_day = '5';
+        window.localStorage.setItem('index_day', '5');
     }
     else if (day == "Saturday") {
-        index_day = '6';
+        window.localStorage.setItem('index_day', '6');
     }
 
    
