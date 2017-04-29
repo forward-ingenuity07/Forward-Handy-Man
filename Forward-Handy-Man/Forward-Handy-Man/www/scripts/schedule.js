@@ -12,7 +12,7 @@ document.getElementById('ButSub').onclick=function()
     //Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
     Arr[0] = document.getElementById('Naming');
-    window.localStorage.setItem('Naming', JSON.stringify(Arr));
+    window.localStorage.setItem('Naming', (JSON.stringify(Arr)).value);
     alert('Submitted');
     //var Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
