@@ -2,12 +2,11 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    var index_day = [];
     
 
 document.getElementById('ButSub').onclick=function()
 {
-    var Naam
+    var Naam;
     if (day_chosen == 'Sunday')
     {
         Naam[0] = document.getElementById('Naming');
@@ -39,7 +38,7 @@ document.getElementById('ButSub').onclick=function()
         Naam[6] = document.getElementById('Naming');
 
     }
-    window.localStorage.setItem('Naming', JSON.stringify(Naam).value);
+    window.localStorage.setItem('Naming', JSON.stringify(Naam));
     
     alert('Submitted');
     //var Naam = document.getElementById('Naming');
