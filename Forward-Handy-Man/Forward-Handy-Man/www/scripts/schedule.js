@@ -8,12 +8,12 @@
 document.getElementById('ButSub').onclick=function()
 {
     var Naam;
-    var Arr=[];
+    var Arr=["EMZ310"];
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
     Arr[1] = document.getElementById('Naming');
     // window.localStorage.setItem('Naming', (JSON.stringify(Arr)));
-    window.localStorage.setItem("Naming",(JSON.stringify(Arr)).value);
+    window.localStorage.setItem("Naming",JSON.stringify(Arr));
     alert('Submitted');
    // var Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
@@ -38,9 +38,9 @@ document.getElementById('ButSub').onclick=function()
         location.href = 'index.html';
        
     }
-    var StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
+    var StoredArr = JSON.parse(window.localStorage.getItem('Naming').valueOf);
     //var StoredArr = JSON.parse(this.window.localStorage.getItem("Naming"));
-    document.getElementById("first_elem").innerHTML = StoredArr[1].value;
+    document.getElementById("first_elem").innerHTML = StoredArr[1];
     /*document.getElementById("sec_elem").innerHTML = StoredArr[1];
     document.getElementById("thi_elem").innerHTML = StoredArr[2];
     document.getElementById("fou_elem").innerHTML = StoredArr[3];
