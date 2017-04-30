@@ -75,7 +75,7 @@
     document.getElementById("sev_elem").innerHTML = window.localStorage.getItem("Arr.day7");
     if(window.localStorage.getItem("Arr.then8")=="1")
     {
-        document.getElementById("p2").style.display = "normal";
+        document.getElementById("second_row").style.display = "normal";
 
     }
    // document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
