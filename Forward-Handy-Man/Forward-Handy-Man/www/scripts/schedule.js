@@ -11,7 +11,7 @@ document.getElementById('ButSub').onclick=function()
     var Arr=[];
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
-    Arr[0] = document.getElementById('Naming');
+    Arr[1] = document.getElementById('Naming');
     // window.localStorage.setItem('Naming', (JSON.stringify(Arr)));
     window.localStorage.setItem("Naming",JSON.stringify(Arr));
     alert('Submitted');
@@ -38,9 +38,9 @@ document.getElementById('ButSub').onclick=function()
         location.href = 'index.html';
        
     }
-    //var StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
+    var StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
     //var StoredArr = JSON.parse(this.window.localStorage.getItem("Naming"));
-    document.getElementById("first_elem").innerHTML = (JSON.parse(this.window.localStorage.getItem("Naming")))[0].value;
+    document.getElementById("first_elem").innerHTML = StoredArr[1].value;
     /*document.getElementById("sec_elem").innerHTML = StoredArr[1];
     document.getElementById("thi_elem").innerHTML = StoredArr[2];
     document.getElementById("fou_elem").innerHTML = StoredArr[3];
