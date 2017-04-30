@@ -38,7 +38,7 @@ document.getElementById('ButSub').onclick=function()
         location.href = 'index.html';
        
     }
-    var StoredArr = JSON.parse(window.localStorage.getItem('Naming').valueOf);
+    var StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
     //var StoredArr = JSON.parse(this.window.localStorage.getItem("Naming"));
     document.getElementById("first_elem").innerHTML = StoredArr[1];
     /*document.getElementById("sec_elem").innerHTML = StoredArr[1];
