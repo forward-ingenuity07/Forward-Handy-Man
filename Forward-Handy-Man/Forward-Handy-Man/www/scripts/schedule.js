@@ -67,11 +67,11 @@
     //var StoredArr = JSON.parse(this.window.localStorage.getItem("Naming"));
     document.getElementById("first_elem").innerHTML = window.localStorage.getItem("Arr.day1");
     document.getElementById("sec_elem").innerHTML = window.localStorage.getItem("Arr.day2");
-    /*document.getElementById("thi_elem").innerHTML = StoredArr[2];
-    document.getElementById("fou_elem").innerHTML = StoredArr[3];
-    document.getElementById("fif_elem").innerHTML = StoredArr[4];
-    document.getElementById("six_elem").innerHTML = StoredArr[5];
-    document.getElementById("sev_elem").innerHTML = StoredArr[6];*/
+    document.getElementById("thi_elem").innerHTML = window.localStorage.getItem("Arr.day3");
+    document.getElementById("fou_elem").innerHTML = window.localStorage.getItem("Arr.day4");
+    document.getElementById("fif_elem").innerHTML = window.localStorage.getItem("Arr.day5");
+    document.getElementById("six_elem").innerHTML = window.localStorage.getItem("Arr.day6");
+    document.getElementById("sev_elem").innerHTML = window.localStorage.getItem("Arr.day7");
     
    // document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 })();
