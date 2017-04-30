@@ -33,27 +33,18 @@
             window.localStorage.setItem("Arr.day7", Naam.value);
         }
 
-       
-            var x = document.getElementById('schedule_table');
-            // deep clone the targeted row
-            var new_row = x.rows[1].cloneNode(true);
-            // get the total number of rows
-            var len = x.rows.length;
-            // set the innerHTML of the first row 
-            new_row.cells[0].innerHTML = len;
+        var x = document.getElementById('schedule_table');
+        var new_row = x.rows[1].cloneNode(true);
+        var len = x.rows.length;
+        new_row.cells[0].innerHTML = len;
 
-            // grab the input from the first cell and update its ID and value
-            var inp1 = new_row.cells[1].getElementById('ButSub')[0];
-            inp1.id += len;
-            inp1.value = '';
-
-            // grab the input from the first cell and update its ID and value
-            var inp2 = new_row.cells[2].getElementById('ButSub')[0];
-            inp2.id += len;
-            inp2.value = '';
-
-            // append the new row to the table
-            x.appendChild(new_row);
+        var inp1 = new_row.cells[1].getElementsByTagName('button')[0];
+        inp1.id += len;
+        inp1.value = '';
+        var inp2 = new_row.cells[2].getElementsByTagName('button')[0];
+        inp2.id += len;
+        inp2.value = '';
+        x.appendChild(new_row);
         
         
     //Naam = document.getElementById('Naming');
