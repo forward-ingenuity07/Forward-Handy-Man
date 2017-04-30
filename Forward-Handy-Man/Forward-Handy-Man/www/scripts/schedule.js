@@ -32,6 +32,29 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
             window.localStorage.setItem("Arr.day7", Naam.value);
         }
+
+        function insRow() {
+            var x = document.getElementById('schedule_table');
+            // deep clone the targeted row
+            var new_row = x.rows[1].cloneNode(true);
+            // get the total number of rows
+            var len = x.rows.length;
+            // set the innerHTML of the first row 
+            new_row.cells[0].innerHTML = len;
+
+            // grab the input from the first cell and update its ID and value
+            var inp1 = new_row.cells[1].getElementsByTagName('input')[0];
+            inp1.id += len;
+            inp1.value = '';
+
+            // grab the input from the first cell and update its ID and value
+            var inp2 = new_row.cells[2].getElementsByTagName('input')[0];
+            inp2.id += len;
+            inp2.value = '';
+
+            // append the new row to the table
+            x.appendChild(new_row);
+        }
         
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
@@ -73,13 +96,7 @@
     document.getElementById("fif_elem").innerHTML = window.localStorage.getItem("Arr.day5");
     document.getElementById("six_elem").innerHTML = window.localStorage.getItem("Arr.day6");
     document.getElementById("sev_elem").innerHTML = window.localStorage.getItem("Arr.day7");
-    if(window.localStorage.getItem("Arr.then8")=="1")
-    {
-        var parentElement = document.getElementById('second_row');
-        parentElement.setAttribute('style', 'display:normal;');
-        
-
-    }
+    
    // document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 })();
 
