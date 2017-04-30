@@ -10,7 +10,7 @@
         var e = document.getElementById("day_chosen");
        
         var Naam = document.getElementById('Naming');
-        var Arr = { day1: "", day2: "", day3: "", day4: "", day5: "", day6: "", day7: ""};
+        var Arr = { day1: "", day2: "", day3: "", day4: "", day5: "", day6: "", day7: "",then8:""};
         if (e.options[e.selectedIndex].value == "Sunday") {
             window.localStorage.setItem("Arr.day1", Naam.value);
         }
@@ -40,6 +40,7 @@
     window.localStorage.setItem("Naming", (JSON.stringify(Arr)));
     window.localStorage.setItem("obj", (JSON.stringify(Arr)));
     alert('Submitted');
+    window.localStorage.setItem("Arr.then8", "1");
    // var Naam = document.getElementById('Naming');
     //window.localStorage.setItem('Naming', Naam.value);
     /*if (typeof (Storage) !== "undefined") {
@@ -72,7 +73,11 @@
     document.getElementById("fif_elem").innerHTML = window.localStorage.getItem("Arr.day5");
     document.getElementById("six_elem").innerHTML = window.localStorage.getItem("Arr.day6");
     document.getElementById("sev_elem").innerHTML = window.localStorage.getItem("Arr.day7");
-    
+    if(window.localStorage.getItem("Arr.then8")=="1")
+    {
+        document.getElementById("p2").style.display = "normal";
+
+    }
    // document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 })();
 
