@@ -8,28 +8,29 @@
     document.getElementById('ButSub').onclick=function()
     {
         var e = document.getElementById("day_chosen");
-        var Naam;
+       
+        var Naam = document.getElementById('Naming');
         var Arr = { day1: "", day2: "", day3: "", day4: "", day5: "", day6: "", day7: ""};
         if (e.options[e.selectedIndex].value == "Sunday") {
-            window.localStorage.setItem("Arr.day1", document.getElementById('Naming'));
+            window.localStorage.setItem("Arr.day1", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Monday") {
-            window.localStorage.setItem("Arr.day2", document.getElementById('Naming'));
+            window.localStorage.setItem("Arr.day2", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Tuesday") {
-            window.localStorage.setItem("Arr.day3", document.getElementById('Naming'));
+            window.localStorage.setItem("Arr.day3", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
-            window.localStorage.setItem("Arr.day4", document.getElementById('Naming'));
+            window.localStorage.setItem("Arr.day4", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Thursday") {
-            window.localStorage.setItem("Arr.day5", document.getElementById('Naming'));
+            window.localStorage.setItem("Arr.day5", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Friday") {
-            window.localStorage.setItem("Arr.day6", document.getElementById('Naming'));
+            window.localStorage.setItem("Arr.day6", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Saturday") {
-            window.localStorage.setItem("Arr.day7", document.getElementById('Naming'));
+            window.localStorage.setItem("Arr.day7", Naam.value);
         }
         
     //Naam = document.getElementById('Naming');
