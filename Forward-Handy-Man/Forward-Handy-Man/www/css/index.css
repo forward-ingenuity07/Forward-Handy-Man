@@ -135,6 +135,10 @@ h1 {
     
 }
 
+#second_row{
+    display:none;
+}
+
 .fade-in{
   animation: animationFrames ease 1s;
   animation-iteration-count: 1;
