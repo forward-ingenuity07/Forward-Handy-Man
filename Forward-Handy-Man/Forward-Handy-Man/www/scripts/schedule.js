@@ -9,26 +9,26 @@
     {
         var Naam;
         var Arr = { day1: "", day2: "", day3: "", day4: "", day5: "", day6: "", day7: ""};
-        if (day_chosen == "Sunday"){
-            window.localStorage.setItem(Arr.day1, document.getElementById('Naming'));
+        if (document.getElementById("day_chosen") == "Sunday"){
+            window.localStorage.setItem("Arr.day1", document.getElementById('Naming'));
         }
-        else if (day_chosen == "Monday") {
-            window.localStorage.setItem(Arr.day2, document.getElementById('Naming'));
+        else if (document.getElementById("day_chosen") == "Monday") {
+            window.localStorage.setItem("Arr.day2", document.getElementById('Naming'));
         }
-        else if (day_chosen == "Tuesday") {
-            window.localStorage.setItem(Arr.day3, document.getElementById('Naming'));
+        else if (document.getElementById("day_chosen") == "Tuesday") {
+            window.localStorage.setItem("Arr.day3", document.getElementById('Naming'));
         }
-        else if (day_chosen == "Wednesday") {
-            window.localStorage.setItem(Arr.day4, document.getElementById('Naming'));
+        else if (document.getElementById("day_chosen") == "Wednesday") {
+            window.localStorage.setItem("Arr.day4", document.getElementById('Naming'));
         }
-        else if (day_chosen == "Thursday") {
-            window.localStorage.setItem(Arr.day5, document.getElementById('Naming'));
+        else if (document.getElementById("day_chosen") == "Thursday") {
+            window.localStorage.setItem("Arr.day5", document.getElementById('Naming'));
         }
-        else if (day_chosen == "Friday") {
-            window.localStorage.setItem(Arr.day6, document.getElementById('Naming'));
+        else if (document.getElementById("day_chosen") == "Friday") {
+            window.localStorage.setItem("Arr.day6", document.getElementById('Naming'));
         }
-        else if (day_chosen == "Saturday") {
-            window.localStorage.setItem(Arr.day7, document.getElementById('Naming'));
+        else if (document.getElementById("day_chosen") == "Saturday") {
+            window.localStorage.setItem("Arr.day7", document.getElementById('Naming'));
         }
         
     //Naam = document.getElementById('Naming');
@@ -63,8 +63,8 @@
     }
     var StoredArr = JSON.parse(window.localStorage.getItem('Naming'));
     //var StoredArr = JSON.parse(this.window.localStorage.getItem("Naming"));
-    document.getElementById("first_elem").innerHTML = window.localStorage.getItem(Arr.day1);
-    document.getElementById("sec_elem").innerHTML = window.localStorage.getItem(Arr.day2);
+    document.getElementById("first_elem").innerHTML = window.localStorage.getItem("Arr.day1");
+    document.getElementById("sec_elem").innerHTML = window.localStorage.getItem("Arr.day2");
     /*document.getElementById("thi_elem").innerHTML = StoredArr[2];
     document.getElementById("fou_elem").innerHTML = StoredArr[3];
     document.getElementById("fif_elem").innerHTML = StoredArr[4];
