@@ -33,7 +33,7 @@
             window.localStorage.setItem("Arr.day7", Naam.value);
         }
 
-        function insRow() {
+       
             var x = document.getElementById('schedule_table');
             // deep clone the targeted row
             var new_row = x.rows[1].cloneNode(true);
@@ -43,18 +43,18 @@
             new_row.cells[0].innerHTML = len;
 
             // grab the input from the first cell and update its ID and value
-            var inp1 = new_row.cells[1].getElementsByTagName('input')[0];
+            var inp1 = new_row.cells[1].getElementById('ButSub')[0];
             inp1.id += len;
             inp1.value = '';
 
             // grab the input from the first cell and update its ID and value
-            var inp2 = new_row.cells[2].getElementsByTagName('input')[0];
+            var inp2 = new_row.cells[2].getElementById('ButSub')[0];
             inp2.id += len;
             inp2.value = '';
 
             // append the new row to the table
             x.appendChild(new_row);
-        }
+        
         
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
