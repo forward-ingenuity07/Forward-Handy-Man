@@ -81,10 +81,10 @@
     {
         var table = document.getElementById("schedule_table");
         var row = table.insertRow(2);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.innerHTML = "NEW CELL1";
-        cell2.innerHTML = "NEW CELL2";
+        row.className = "danger";
+        var cell = [row.insertCell(0), row.insertCell(1), row.insertCell(2), row.insertCell(3), row.insertCell(4), row.insertCell(5), row.insertCell(6)]
+        cell[0].innerHTML = "NEW CELL1";
+        cell[1].innerHTML = "NEW CELL2";
 
     }
    // document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
