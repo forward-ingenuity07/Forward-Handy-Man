@@ -1,9 +1,23 @@
 ﻿
+
 (function () {
     var chosen_day;
     var chosen_time;
     var chosen_title;
     
+
+    function myfunc() {
+        var table = document.getElementById("schedule_table");
+        var row = table.insertRow(2);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "NEW CELL1";
+        cell2.innerHTML = "NEW CELL2";
+    }
+
+
+
+
     obj = new Object(["Val"]);
     document.getElementById('ButSub').onclick=function()
     {
@@ -134,12 +148,3 @@ document.getElementById('ButPlus').onclick = function () {
     }*/);
 }
 
-
-function myfunc() {
-    var table = document.getElementById("schedule_table");
-    var row = table.insertRow(1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    cell1.innerHTML = "NEW CELL1";
-    cell2.innerHTML = "NEW CELL2";
-}
