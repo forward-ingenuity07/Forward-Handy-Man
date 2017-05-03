@@ -34,7 +34,7 @@
             //Using Local_day
             for (i = 0; i < 10; i++)
             {
-                if(days[0][i]=="")
+                if(window.localStorage.getItem("Local_day" + "0" + i)=="")
                 {
                     index = i;
                     break;
@@ -47,11 +47,11 @@
             window.localStorage.setItem("Local_day"+"0"+index, Naam.value);
            // window.localStorage.setItem("Arr.day1", Naam.value);
         }
-           /* 
+            
         else if (e.options[e.selectedIndex].value == "Monday") {
             //Using Local_day
             for (i = 0; i < 10; i++) {
-                if (days[1][i] == "") {
+                if (window.localStorage.getItem("Local_day" + "1" + i) == "") {
                     index = i;
                     break;
 
@@ -65,10 +65,11 @@
 
            // window.localStorage.setItem("Arr.day2", Naam.value);
         }
+            
         else if (e.options[e.selectedIndex].value == "Tuesday") {
 
             for (i = 0; i < 10; i++) {
-                if (days[2][i] == "") {
+                if (window.localStorage.getItem("Local_day" + "2" + i)=="") {
                     index = i;
                     break;
 
@@ -84,7 +85,7 @@
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
             for (i = 0; i < 10; i++) {
-                if (days[1][i] == "") {
+                if (window.localStorage.getItem("Local_day" + "3" + i)=="") {
                     index = i;
                     break;
 
@@ -101,7 +102,7 @@
         else if (e.options[e.selectedIndex].value == "Thursday") {
 
             for (i = 0; i < 10; i++) {
-                if (days[4][i] == "") {
+                if (window.localStorage.getItem("Local_day" + "4" + i)=="") {
                     index = i;
                     break;
 
@@ -118,7 +119,7 @@
         else if (e.options[e.selectedIndex].value == "Friday") {
 
             for (i = 0; i < 10; i++) {
-                if (days[5][i] == "") {
+                if (window.localStorage.getItem("Local_day" + "5" + i)=="") {
                     index = i;
                     break;
 
@@ -134,7 +135,7 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
 
             for (i = 0; i < 10; i++) {
-                if (days[6][i] == "") {
+                if (window.localStorage.getItem("Local_day" + "6" + i)=="") {
                     index = i;
                     break;
 
@@ -149,7 +150,7 @@
         }
   
         window.localStorage.setItem('tabe', '1');
-        */
+        
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
    // Arr[1] = { value: document.getElementById('Naming') };
@@ -193,8 +194,17 @@
     if(window.localStorage.getItem('tabe')=='1')
     {
         var table = document.getElementById("schedule_table");
-        var row = table.insertRow(1);
-        
+        var row1 = table.insertRow(1);
+        var row2 = table.insertRow(1);
+        var row3 = table.insertRow(1);
+        var row4 = table.insertRow(1);
+        var row5 = table.insertRow(1);
+        var row6 = table.insertRow(1);
+        var row7 = table.insertRow(1);
+        var row8 = table.insertRow(1);
+        var row9 = table.insertRow(1);
+        var row9 = table.insertRow(1);
+
         /*var row = [table.insertRow[0], table.insertRow[1], table.insertRow[2], table.insertRow[3], table.insertRow[4], table.insertRow[5], table.insertRow[6], table.insertRow[7], table.insertRow[8], table.insertRow[9]];
         var cell = [[row[0].insertCell(0), row[0].insertCell(1), row[0].insertCell(2), row[0].insertCell(3), row[0].insertCell(4), row[0].insertCell(5), row[0].insertCell(6)], [row[1].insertCell(0), row[1].insertCell(1), row[1].insertCell(2), row[1].insertCell(3), row[1].insertCell(4), row[1].insertCell(5), row[1].insertCell(6)], [row[2].insertCell(0), row[2].insertCell(1), row[2].insertCell(2), row[2].insertCell(3), row[2].insertCell(4), row[2].insertCell(5), row[2].insertCell(6)], [row[3].insertCell(0), row[3].insertCell(1), row[3].insertCell(2), row[3].insertCell(3), row[3].insertCell(4), row[3].insertCell(5), row[3].insertCell(6)], [row[4].insertCell(0), row[4].insertCell(1), row[4].insertCell(2), row[4].insertCell(3), row[4].insertCell(4), row[4].insertCell(5), row[4].insertCell(6)], [row[4].insertCell(0), row[4].insertCell(1), row[4].insertCell(2), row[4].insertCell(3), row[4].insertCell(4), row[4].insertCell(5), row[4].insertCell(6)], [row[5].insertCell(0), row[5].insertCell(1), row[5].insertCell(2), row[5].insertCell(3), row[5].insertCell(4), row[5].insertCell(5), row[5].insertCell(6)], [row[6].insertCell(0), row[6].insertCell(1), row[6].insertCell(2), row[6].insertCell(3), row[6].insertCell(4), row[6].insertCell(5), row[6].insertCell(6)], [row[7].insertCell(0), row[7].insertCell(1), row[7].insertCell(2), row[7].insertCell(3), row[7].insertCell(4), row[7].insertCell(5), row[7].insertCell(6)], [row[8].insertCell(0), row[8].insertCell(1), row[8].insertCell(2), row[8].insertCell(3), row[8].insertCell(4), row[8].insertCell(5), row[8].insertCell(6)], [row[9].insertCell(0), row[9].insertCell(1), row[9].insertCell(2), row[9].insertCell(3), row[9].insertCell(4), row[9].insertCell(5), row[9].insertCell(6)]];
         */
