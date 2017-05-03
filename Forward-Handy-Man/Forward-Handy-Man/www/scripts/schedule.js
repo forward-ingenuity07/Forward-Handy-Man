@@ -22,7 +22,7 @@
             days[6][i] = window.localStorage.getItem("Local_day" + "6" + i);
             
         }
-        var time = [];
+       
         var index=0;
         var e = document.getElementById("day_chosen");
         var h = document.getElementById("hour_chosen");
@@ -155,7 +155,7 @@
    // Arr[1] = { value: document.getElementById('Naming') };
     // window.localStorage.setItem('Naming', (JSON.stringify(Arr)));
     window.localStorage.setItem("Naming", (JSON.stringify(Arr)));
-    window.localStorage.setItem("obj", (JSON.stringify(Arr)));*/
+    window.localStorage.setItem("obj", (JSON.stringify(Arr)));
     alert('Submitted');
     //window.localStorage.setItem("Arr.then8", "1");
    // var Naam = document.getElementById('Naming');
