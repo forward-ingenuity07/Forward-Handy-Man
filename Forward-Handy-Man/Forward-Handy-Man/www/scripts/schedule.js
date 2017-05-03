@@ -43,7 +43,7 @@
                 
 
             }
-            day[0][index] = Naam.value;
+           
             window.localStorage.setItem("Local_day"+"0"+index, Naam.value);
            // window.localStorage.setItem("Arr.day1", Naam.value);
         }
@@ -58,7 +58,7 @@
                 
 
             }
-            day[1][index] = Naam.value;
+           
             window.localStorage.setItem("Local_day"+"1" + index, Naam.value);
 
 
@@ -75,7 +75,7 @@
 
 
             }
-            day[2][index] = Naam.value;
+           
             window.localStorage.setItem("Local_day" + "2" + index, Naam.value);
 
 
@@ -91,7 +91,7 @@
 
 
             }
-            day[3][index] = Naam.value;
+           
             window.localStorage.setItem("Local_day" + "3" + index, Naam.value);
 
 
@@ -108,7 +108,7 @@
 
 
             }
-            day[4][index] = Naam.value;
+           
             window.localStorage.setItem("Local_day" + "4" + index, Naam.value);
 
 
@@ -125,7 +125,7 @@
 
 
             }
-            day[1][index] = Naam.value;
+           
             window.localStorage.setItem("Local_day" + "5" + index, Naam.value);
 
  //           window.localStorage.setItem("Arr.day6", Naam.value);
@@ -141,10 +141,10 @@
 
 
             }
-            day[1][index] = Naam.value;
+           
             window.localStorage.setItem("Local_day" + "6" + index, Naam.value);
 
-            window.localStorage.setItem("Arr.day7", Naam.value);
+            //window.localStorage.setItem("Arr.day7", Naam.value);
         }
   
         window.localStorage.setItem('tabe', '1');
