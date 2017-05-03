@@ -11,7 +11,7 @@
     {
         var days = [["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""]];
         
-        for (i = 0; i < 10; i++)
+      /*  for (i = 0; i < 10; i++)
         {
             days[0][i] = window.localStorage.getItem("Local_day" + "0" + i);
             days[1][i] = window.localStorage.getItem("Local_day" + "1" + i);
@@ -22,7 +22,7 @@
             days[6][i] = window.localStorage.getItem("Local_day" + "6" + i);
             
         }
-       
+       */
         var index=0;
         var e = document.getElementById("day_chosen");
         var h = document.getElementById("hour_chosen");
@@ -47,7 +47,7 @@
             window.localStorage.setItem("Local_day"+"0"+index, Naam.value);
            // window.localStorage.setItem("Arr.day1", Naam.value);
         }
-            
+           /* 
         else if (e.options[e.selectedIndex].value == "Monday") {
             //Using Local_day
             for (i = 0; i < 10; i++) {
@@ -149,13 +149,13 @@
         }
   
         window.localStorage.setItem('tabe', '1');
-        
+        */
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
    // Arr[1] = { value: document.getElementById('Naming') };
     // window.localStorage.setItem('Naming', (JSON.stringify(Arr)));
-    window.localStorage.setItem("Naming", (JSON.stringify(Arr)));
-    window.localStorage.setItem("obj", (JSON.stringify(Arr)));
+   // window.localStorage.setItem("Naming", (JSON.stringify(Arr)));
+    //window.localStorage.setItem("obj", (JSON.stringify(Arr)));
     alert('Submitted');
     //window.localStorage.setItem("Arr.then8", "1");
    // var Naam = document.getElementById('Naming');
