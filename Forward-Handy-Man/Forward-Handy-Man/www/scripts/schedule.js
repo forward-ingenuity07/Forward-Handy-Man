@@ -34,7 +34,7 @@
             //Using Local_day
             for (i = 0; i < 10; i++)
             {
-                if(day[0][i]=="")
+                if(days[0][i]=="")
                 {
                     index = i;
                     break;
@@ -47,11 +47,11 @@
             window.localStorage.setItem("Local_day"+"0"+index, Naam.value);
            // window.localStorage.setItem("Arr.day1", Naam.value);
         }
-            /*
+            
         else if (e.options[e.selectedIndex].value == "Monday") {
             //Using Local_day
             for (i = 0; i < 10; i++) {
-                if (day[1][i] == "") {
+                if (days[1][i] == "") {
                     index = i;
                     break;
 
@@ -68,7 +68,7 @@
         else if (e.options[e.selectedIndex].value == "Tuesday") {
 
             for (i = 0; i < 10; i++) {
-                if (day[2][i] == "") {
+                if (days[2][i] == "") {
                     index = i;
                     break;
 
@@ -84,7 +84,7 @@
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
             for (i = 0; i < 10; i++) {
-                if (day[1][i] == "") {
+                if (days[1][i] == "") {
                     index = i;
                     break;
 
@@ -101,7 +101,7 @@
         else if (e.options[e.selectedIndex].value == "Thursday") {
 
             for (i = 0; i < 10; i++) {
-                if (day[4][i] == "") {
+                if (days[4][i] == "") {
                     index = i;
                     break;
 
@@ -118,7 +118,7 @@
         else if (e.options[e.selectedIndex].value == "Friday") {
 
             for (i = 0; i < 10; i++) {
-                if (day[5][i] == "") {
+                if (days[5][i] == "") {
                     index = i;
                     break;
 
@@ -134,7 +134,7 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
 
             for (i = 0; i < 10; i++) {
-                if (day[6][i] == "") {
+                if (days[6][i] == "") {
                     index = i;
                     break;
 
