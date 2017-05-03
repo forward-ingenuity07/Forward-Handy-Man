@@ -195,27 +195,55 @@
     {
         var table = document.getElementById("schedule_table");
         var row1 = table.insertRow(1);
-        var row2 = table.insertRow(1);
-        var row3 = table.insertRow(1);
-        var row4 = table.insertRow(1);
-        var row5 = table.insertRow(1);
-        var row6 = table.insertRow(1);
-        var row7 = table.insertRow(1);
-        var row8 = table.insertRow(1);
-        var row9 = table.insertRow(1);
-        var row9 = table.insertRow(1);
+        var row2 = table.insertRow(2);
+        var row3 = table.insertRow(3);
+        var row4 = table.insertRow(4);
+        var row5 = table.insertRow(5);
+        var row6 = table.insertRow(6);
+        var row7 = table.insertRow(7);
+        var row8 = table.insertRow(8);
+        var row9 = table.insertRow(9);
+        var row10 = table.insertRow(10);
 
         /*var row = [table.insertRow[0], table.insertRow[1], table.insertRow[2], table.insertRow[3], table.insertRow[4], table.insertRow[5], table.insertRow[6], table.insertRow[7], table.insertRow[8], table.insertRow[9]];
         var cell = [[row[0].insertCell(0), row[0].insertCell(1), row[0].insertCell(2), row[0].insertCell(3), row[0].insertCell(4), row[0].insertCell(5), row[0].insertCell(6)], [row[1].insertCell(0), row[1].insertCell(1), row[1].insertCell(2), row[1].insertCell(3), row[1].insertCell(4), row[1].insertCell(5), row[1].insertCell(6)], [row[2].insertCell(0), row[2].insertCell(1), row[2].insertCell(2), row[2].insertCell(3), row[2].insertCell(4), row[2].insertCell(5), row[2].insertCell(6)], [row[3].insertCell(0), row[3].insertCell(1), row[3].insertCell(2), row[3].insertCell(3), row[3].insertCell(4), row[3].insertCell(5), row[3].insertCell(6)], [row[4].insertCell(0), row[4].insertCell(1), row[4].insertCell(2), row[4].insertCell(3), row[4].insertCell(4), row[4].insertCell(5), row[4].insertCell(6)], [row[4].insertCell(0), row[4].insertCell(1), row[4].insertCell(2), row[4].insertCell(3), row[4].insertCell(4), row[4].insertCell(5), row[4].insertCell(6)], [row[5].insertCell(0), row[5].insertCell(1), row[5].insertCell(2), row[5].insertCell(3), row[5].insertCell(4), row[5].insertCell(5), row[5].insertCell(6)], [row[6].insertCell(0), row[6].insertCell(1), row[6].insertCell(2), row[6].insertCell(3), row[6].insertCell(4), row[6].insertCell(5), row[6].insertCell(6)], [row[7].insertCell(0), row[7].insertCell(1), row[7].insertCell(2), row[7].insertCell(3), row[7].insertCell(4), row[7].insertCell(5), row[7].insertCell(6)], [row[8].insertCell(0), row[8].insertCell(1), row[8].insertCell(2), row[8].insertCell(3), row[8].insertCell(4), row[8].insertCell(5), row[8].insertCell(6)], [row[9].insertCell(0), row[9].insertCell(1), row[9].insertCell(2), row[9].insertCell(3), row[9].insertCell(4), row[9].insertCell(5), row[9].insertCell(6)]];
         */
-        row.className = "danger";
-        var cell = [row.insertCell(0), row.insertCell(1), row.insertCell(2), row.insertCell(3), row.insertCell(4), row.insertCell(5), row.insertCell(6)]
+        row1.className = "danger";
+        row2.className = "danger";
+        row3.className = "danger";
+        row4.className = "danger";
+        row5.className = "danger";
+        row6.className = "danger";
+        row7.className = "danger";
+        row8.className = "danger";
+        row9.className = "danger";
+        var cell1 = [row1.insertCell(0), row1.insertCell(1), row1.insertCell(2), row1.insertCell(3), row1.insertCell(4), row1.insertCell(5), row1.insertCell(6)];
+        var cell2 = [row2.insertCell(0), row2.insertCell(1), row2.insertCell(2), row2.insertCell(3), row2.insertCell(4), row2.insertCell(5), row2.insertCell(6)];
+        var cell3 = [row3.insertCell(0), row3.insertCell(1), row3.insertCell(2), row3.insertCell(3), row3.insertCell(4), row3.insertCell(5), row3.insertCell(6)];
+        var cell4 = [row4.insertCell(0), row4.insertCell(1), row4.insertCell(2), row4.insertCell(3), row4.insertCell(4), row4.insertCell(5), row4.insertCell(6)];
+        var cell5 = [row5.insertCell(0), row5.insertCell(1), row5.insertCell(2), row5.insertCell(3), row5.insertCell(4), row5.insertCell(5), row5.insertCell(6)];
+        var cell6 = [row6.insertCell(0), row6.insertCell(1), row6.insertCell(2), row6.insertCell(3), row6.insertCell(4), row6.insertCell(5), row6.insertCell(6)];
+        var cell7 = [row7.insertCell(0), row7.insertCell(1), row7.insertCell(2), row7.insertCell(3), row7.insertCell(4), row7.insertCell(5), row7.insertCell(6)];
+        var cell8 = [row8.insertCell(0), row8.insertCell(1), row8.insertCell(2), row8.insertCell(3), row8.insertCell(4), row8.insertCell(5), row8.insertCell(6)];
+        var cell9 = [row9.insertCell(0), row9.insertCell(1), row9.insertCell(2), row9.insertCell(3), row9.insertCell(4), row9.insertCell(5), row9.insertCell(6)];
+        var cell10 = [row10.insertCell(0), row10.insertCell(1), row10.insertCell(2), row10.insertCell(3), row10.insertCell(4), row10.insertCell(5), row10.insertCell(6)];
+        
+
         for (i = 0; i < 6; i++)
         {
-            row.className = "danger";
+            
       
                 
-                cell[i].innerHTML = window.localStorage.getItem("Local_day" + i + "0");
+            cell1[i].innerHTML = window.localStorage.getItem("Local_day" + i + "0");
+            cell2[i].innerHTML = window.localStorage.getItem("Local_day" + i + "1");
+            cell3[i].innerHTML = window.localStorage.getItem("Local_day" + i + "2");
+            cell4[i].innerHTML = window.localStorage.getItem("Local_day" + i + "3");
+            cell5[i].innerHTML = window.localStorage.getItem("Local_day" + i + "4");
+            cell6[i].innerHTML = window.localStorage.getItem("Local_day" + i + "5");
+            cell7[i].innerHTML = window.localStorage.getItem("Local_day" + i + "6");
+            cell8[i].innerHTML = window.localStorage.getItem("Local_day" + i + "7");
+            cell9[i].innerHTML = window.localStorage.getItem("Local_day" + i + "8");
+            cell10[i].innerHTML = window.localStorage.getItem("Local_day" + i + "8");
             
             //cell[1].innerHTML = "NEW CELL2";
         }
