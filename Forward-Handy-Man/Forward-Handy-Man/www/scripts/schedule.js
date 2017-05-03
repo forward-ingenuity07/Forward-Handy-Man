@@ -32,20 +32,15 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
             window.localStorage.setItem("Arr.day7", Naam.value);
         }
-
-        var x = document.getElementById('schedule_table');
-        var new_row = x.rows[1].cloneNode(true);
-        var len = x.rows.length;
-        new_row.cells[0].innerHTML = len;
-
-        var inp1 = new_row.cells[1].getElementsByTagName('button')[0];
-        inp1.id += len;
-        inp1.value = '';
-        var inp2 = new_row.cells[2].getElementsByTagName('button')[0];
-        inp2.id += len;
-        inp2.value = '';
-        x.appendChild(new_row);
+       
+            var table = document.getElementById("schedule_table");
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = "NEW CELL1";
+            cell2.innerHTML = "NEW CELL2";
         
+
         
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
