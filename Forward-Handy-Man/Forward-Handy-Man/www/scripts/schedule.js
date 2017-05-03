@@ -4,19 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    
-
-    function myfunc() {
-        var table = document.getElementById("schedule_table");
-        var row = table.insertRow(2);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.innerHTML = "NEW CELL1";
-        cell2.innerHTML = "NEW CELL2";
-    }
-
-
-
+   
 
     obj = new Object(["Val"]);
     document.getElementById('ButSub').onclick=function()
@@ -46,8 +34,8 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
             window.localStorage.setItem("Arr.day7", Naam.value);
         }
-        myfunc();
-
+  
+        window.localStorage.setItem('tabe', '1');
         
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
@@ -89,7 +77,16 @@
     document.getElementById("fif_elem").innerHTML = window.localStorage.getItem("Arr.day5");
     document.getElementById("six_elem").innerHTML = window.localStorage.getItem("Arr.day6");
     document.getElementById("sev_elem").innerHTML = window.localStorage.getItem("Arr.day7");
-    
+    if(window.localStorage.getItem('tabe')=='1')
+    {
+        var table = document.getElementById("schedule_table");
+        var row = table.insertRow(2);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "NEW CELL1";
+        cell2.innerHTML = "NEW CELL2";
+
+    }
    // document.getElementById("first_elem").innerHTML = window.localStorage.getItem('Naming');
 })();
 
