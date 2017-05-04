@@ -9,6 +9,18 @@
     obj = new Object(["Val"]);
     document.getElementById('ButSub').onclick=function()
     {
+
+        if (window.localStorage.getItem('stand') != '1')
+        {
+            for (i = 0; i < 6; i++)
+            {
+                for (j = 0; j < 10; j++)
+                    {
+                    window.localStorage.removeItem('Local_day'+i+j);
+                }
+            }
+            window.localStorage.setItem('stand', '1');
+        }
         //var days = [["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""]];
         
       /*  for (i = 0; i < 10; i++)
@@ -44,7 +56,9 @@
 
             }
            
-            window.localStorage.setItem("Local_day"+"0"+index, Naam.value);
+            window.localStorage.setItem("Local_day" + "0" + index, Naam.value);
+            window.localStorage.setItem("Local_hour" + "0" + index, h.options[h.selectedIndex].value);
+            window.localStorage.setItem("Local_minute" + "0" + index, m.options[m.selectedIndex].value);
            // window.localStorage.setItem("Arr.day1", Naam.value);
         }
             
@@ -61,7 +75,8 @@
             }
            
             window.localStorage.setItem("Local_day"+"1" + index, Naam.value);
-
+            window.localStorage.setItem("Local_hour" + "1" + index, h.options[h.selectedIndex].value);
+            window.localStorage.setItem("Local_minute" + "1" + index, m.options[m.selectedIndex].value);
 
            // window.localStorage.setItem("Arr.day2", Naam.value);
         }
@@ -79,7 +94,8 @@
             }
            
             window.localStorage.setItem("Local_day" + "2" + index, Naam.value);
-
+            window.localStorage.setItem("Local_hour" + "2" + index, h.options[h.selectedIndex].value);
+            window.localStorage.setItem("Local_minute" + "2" + index, m.options[m.selectedIndex].value);
 
            // window.localStorage.setItem("Arr.day3", Naam.value);
         }
@@ -95,7 +111,8 @@
             }
            
             window.localStorage.setItem("Local_day" + "3" + index, Naam.value);
-
+            window.localStorage.setItem("Local_hour" + "3" + index, h.options[h.selectedIndex].value);
+            window.localStorage.setItem("Local_minute" + "3" + index, m.options[m.selectedIndex].value);
 
            // window.localStorage.setItem("Arr.day4", Naam.value);
         }
@@ -112,7 +129,8 @@
             }
            
             window.localStorage.setItem("Local_day" + "4" + index, Naam.value);
-
+            window.localStorage.setItem("Local_hour" + "4" + index, h.options[h.selectedIndex].value);
+            window.localStorage.setItem("Local_minute" + "4" + index, m.options[m.selectedIndex].value);
 
            // window.localStorage.setItem("Arr.day5", Naam.value);
         }
@@ -129,7 +147,8 @@
             }
            
             window.localStorage.setItem("Local_day" + "5" + index, Naam.value);
-
+            window.localStorage.setItem("Local_hour" + "5" + index, h.options[h.selectedIndex].value);
+            window.localStorage.setItem("Local_minute" + "5" + index, m.options[m.selectedIndex].value);
  //           window.localStorage.setItem("Arr.day6", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Saturday") {
@@ -145,7 +164,8 @@
             }
            
             window.localStorage.setItem("Local_day" + "6" + index, Naam.value);
-
+            window.localStorage.setItem("Local_hour" + "6" + index, h.options[h.selectedIndex].value);
+            window.localStorage.setItem("Local_minute" + "6" + index, m.options[m.selectedIndex].value);
             //window.localStorage.setItem("Arr.day7", Naam.value);
         }
   
@@ -235,7 +255,7 @@
             
       
                 
-            cell1[i].innerHTML = window.localStorage.getItem("Local_day" + i + "0");
+            cell1[i].innerHTML ='<center><a href="#">'+window.localStorage.getItem("Local_day" + i + "0")+'<br />'+window.localStorage.getItem("Local_hour" + i + "0")+':'+window.localStorage.getItem("Local_minute" + i + "0")+'</a></center>'
             cell2[i].innerHTML = window.localStorage.getItem("Local_day" + i + "1");
             cell3[i].innerHTML = window.localStorage.getItem("Local_day" + i + "2");
             cell4[i].innerHTML = window.localStorage.getItem("Local_day" + i + "3");
