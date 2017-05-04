@@ -34,7 +34,7 @@
             //Using Local_day
             for (i = 0; i < 10; i++)
             {
-                if((window.localStorage.getItem("Local_day" + "0" + i)).length==0)
+                if((window.localStorage.getItem("Local_day" + "0" + i))[0]==" ")
                 {
                     index = i;
                     break;
@@ -51,7 +51,7 @@
         else if (e.options[e.selectedIndex].value == "Monday") {
             //Using Local_day
             for (i = 0; i < 10; i++) {
-                if ((window.localStorage.getItem("Local_day" + "1" + i)).length==0) {
+                if ((window.localStorage.getItem("Local_day" + "1" + i))[0]=="") {
                     index = i;
                     break;
 
@@ -69,7 +69,7 @@
         else if (e.options[e.selectedIndex].value == "Tuesday") {
 
             for (i = 0; i < 10; i++) {
-                if ((window.localStorage.getItem("Local_day" + "2" + i)).length==0) {
+                if ((window.localStorage.getItem("Local_day" + "2" + i))[0]=="") {
                     index = i;
                     break;
 
@@ -85,7 +85,7 @@
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
             for (i = 0; i < 10; i++) {
-                if ((window.localStorage.getItem("Local_day" + "3" + i)).length==0) {
+                if ((window.localStorage.getItem("Local_day" + "3" + i))[0]=="") {
                     index = i;
                     break;
 
@@ -102,7 +102,7 @@
         else if (e.options[e.selectedIndex].value == "Thursday") {
 
             for (i = 0; i < 10; i++) {
-                if ((window.localStorage.getItem("Local_day" + "4" + i)).length==0) {
+                if ((window.localStorage.getItem("Local_day" + "4" + i))[0]=="") {
                     index = i;
                     break;
 
@@ -119,7 +119,7 @@
         else if (e.options[e.selectedIndex].value == "Friday") {
 
             for (i = 0; i < 10; i++) {
-                if ((window.localStorage.getItem("Local_day" + "5" + i)).length==0) {
+                if ((window.localStorage.getItem("Local_day" + "5" + i))[0]=="") {
                     index = i;
                     break;
 
@@ -135,7 +135,7 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
 
             for (i = 0; i < 10; i++) {
-                if ((window.localStorage.getItem("Local_day" + "6" + i)).length==0) {
+                if ((window.localStorage.getItem("Local_day" + "6" + i))[0]=="") {
                     index = i;
                     break;
 
