@@ -34,7 +34,7 @@
             //Using Local_day
             for (i = 0; i < 10; i++)
             {
-                if(window.localStorage.getItem("Local_day" + "0" + i)=="")
+                if((window.localStorage.getItem("Local_day" + "0" + i)).length==0)
                 {
                     index = i;
                     break;
@@ -51,7 +51,7 @@
         else if (e.options[e.selectedIndex].value == "Monday") {
             //Using Local_day
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "1" + i) == "") {
+                if ((window.localStorage.getItem("Local_day" + "1" + i)).length==0) {
                     index = i;
                     break;
 
@@ -69,7 +69,7 @@
         else if (e.options[e.selectedIndex].value == "Tuesday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "2" + i)=="") {
+                if ((window.localStorage.getItem("Local_day" + "2" + i)).length==0) {
                     index = i;
                     break;
 
@@ -85,7 +85,7 @@
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "3" + i)=="") {
+                if ((window.localStorage.getItem("Local_day" + "3" + i)).length==0) {
                     index = i;
                     break;
 
@@ -102,7 +102,7 @@
         else if (e.options[e.selectedIndex].value == "Thursday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "4" + i)=="") {
+                if ((window.localStorage.getItem("Local_day" + "4" + i)).length==0) {
                     index = i;
                     break;
 
@@ -119,7 +119,7 @@
         else if (e.options[e.selectedIndex].value == "Friday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "5" + i)=="") {
+                if ((window.localStorage.getItem("Local_day" + "5" + i)).length==0) {
                     index = i;
                     break;
 
@@ -135,7 +135,7 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "6" + i)=="") {
+                if ((window.localStorage.getItem("Local_day" + "6" + i)).length==0) {
                     index = i;
                     break;
 
@@ -217,6 +217,7 @@
         row7.className = "danger";
         row8.className = "danger";
         row9.className = "danger";
+        row10.className = "danger";
         var cell1 = [row1.insertCell(0), row1.insertCell(1), row1.insertCell(2), row1.insertCell(3), row1.insertCell(4), row1.insertCell(5), row1.insertCell(6)];
         var cell2 = [row2.insertCell(0), row2.insertCell(1), row2.insertCell(2), row2.insertCell(3), row2.insertCell(4), row2.insertCell(5), row2.insertCell(6)];
         var cell3 = [row3.insertCell(0), row3.insertCell(1), row3.insertCell(2), row3.insertCell(3), row3.insertCell(4), row3.insertCell(5), row3.insertCell(6)];
