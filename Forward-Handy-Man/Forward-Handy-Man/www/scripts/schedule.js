@@ -43,7 +43,7 @@
         }
        */
 
-        
+      /*  
         for (j = 0; j < 10; j++) {
             if (window.localStorage.getItem('Local_day' + "0" + j) === null)
             {
@@ -154,7 +154,7 @@
 
                 window.localStorage.setItem('Local_minute' + "6" + j, " ");
             }
-        }
+        }*/
 
 
         var index=0;
@@ -168,7 +168,7 @@
             //Using Local_day
             for (i = 0; i < 10; i++)
             {
-                if(window.localStorage.getItem("Local_day" + "0" + i)===" ")
+                if(window.localStorage.getItem("Local_day" + "0" + i)===null)
                 {
                     index = i;
                     break;
@@ -187,7 +187,7 @@
         else if (e.options[e.selectedIndex].value == "Monday") {
             //Using Local_day
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "1" + i)===" ") {
+                if (window.localStorage.getItem("Local_day" + "1" + i)===null) {
                     index = i;
                     break;
 
@@ -206,7 +206,7 @@
         else if (e.options[e.selectedIndex].value == "Tuesday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "2" + i)===" ") {
+                if (window.localStorage.getItem("Local_day" + "2" + i)===null) {
                     index = i;
                     break;
 
@@ -223,7 +223,7 @@
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "3" + i)===" ") {
+                if (window.localStorage.getItem("Local_day" + "3" + i)===null) {
                     index = i;
                     break;
 
@@ -241,7 +241,7 @@
         else if (e.options[e.selectedIndex].value == "Thursday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "4" + i)===" ") {
+                if (window.localStorage.getItem("Local_day" + "4" + i)===null) {
                     index = i;
                     break;
 
@@ -259,7 +259,7 @@
         else if (e.options[e.selectedIndex].value == "Friday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "5" + i)===" ") {
+                if (window.localStorage.getItem("Local_day" + "5" + i)===null) {
                     index = i;
                     break;
 
@@ -276,7 +276,7 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "6" + i)===" ") {
+                if (window.localStorage.getItem("Local_day" + "6" + i)===null) {
                     index = i;
                     break;
 
