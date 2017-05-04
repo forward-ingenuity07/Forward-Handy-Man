@@ -10,7 +10,24 @@
     document.getElementById('ButSub').onclick=function()
     {
 
-      
+        if (window.localStorage.getItem('stand') != '4')
+        {
+            
+                /*for (j = 0; j < 10; j++)
+                    {
+                    window.localStorage.setItem('Local_day'+"0"+j,null);
+                    window.localStorage.setItem('Local_day' + "1" + j,null);
+                    window.localStorage.setItem('Local_day' + "2" + j,null);
+                    window.localStorage.setItem('Local_day' + "3" + j,null);
+                    window.localStorage.setItem('Local_day' + "4" + j,null);
+                    window.localStorage.setItem('Local_day' + "5" + j,null);
+                    window.localStorage.setItem('Local_day' + "6" + j,null);
+                
+                }*/
+            window.localStorage.clear();
+
+            window.localStorage.setItem('stand', '4');
+        }
         //var days = [["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""]];
         
       /*  for (i = 0; i < 10; i++)
@@ -28,42 +45,42 @@
 
         
         for (j = 0; j < 10; j++) {
-            if (window.localStorage.getItem('Local_day' + "0" + j) == null)
+            if (window.localStorage.getItem('Local_day' + "0" + j) === null)
             {
 
                 window.localStorage.setItem('Local_day' + "0" + j, " ");
                 
             }
             
-            if (window.localStorage.getItem('Local_day' + "1" + j) == null) {
+            if (window.localStorage.getItem('Local_day' + "1" + j) === null) {
 
                 window.localStorage.setItem('Local_day' + "1" + j, " ");
 
             }
 
-            if (window.localStorage.getItem('Local_day' + "2" + j) == null) {
+            if (window.localStorage.getItem('Local_day' + "2" + j) === null) {
 
                 window.localStorage.setItem('Local_day' + "2" + j, " ");
 
             }
 
-            if (window.localStorage.getItem('Local_day' + "3" + j) == null) {
+            if (window.localStorage.getItem('Local_day' + "3" + j) === null) {
 
                 window.localStorage.setItem('Local_day' + "3" + j, " ");
 
             }
-            if (window.localStorage.getItem('Local_day' + "4" + j) == null) {
+            if (window.localStorage.getItem('Local_day' + "4" + j) === null) {
 
                 window.localStorage.setItem('Local_day' + "4" + j, " ");
 
             }
 
-            if (window.localStorage.getItem('Local_day' + "5" + j) == null) {
+            if (window.localStorage.getItem('Local_day' + "5" + j) === null) {
 
                 window.localStorage.setItem('Local_day' + "5" + j, " ");
 
             }
-            if (window.localStorage.getItem('Local_day' + "6" + j) == null) {
+            if (window.localStorage.getItem('Local_day' + "6" + j) === null) {
 
                 window.localStorage.setItem('Local_day' + "6" + j, " ");
 
@@ -71,69 +88,69 @@
 
 
 
-            if (window.localStorage.getItem('Local_hour' + "0" + j) == null) {
+            if (window.localStorage.getItem('Local_hour' + "0" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "0" + j, " ");
                 
             }
-            if (window.localStorage.getItem('Local_hour' + "1" + j) == null) {
+            if (window.localStorage.getItem('Local_hour' + "1" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "1" + j, " ");
 
             }
-            if (window.localStorage.getItem('Local_hour' + "2" + j) == null) {
+            if (window.localStorage.getItem('Local_hour' + "2" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "2" + j, " ");
 
             }
-            if (window.localStorage.getItem('Local_hour' + "3" + j) == null) {
+            if (window.localStorage.getItem('Local_hour' + "3" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "3" + j, " ");
 
             }
-            if (window.localStorage.getItem('Local_hour' + "4" + j) == null) {
+            if (window.localStorage.getItem('Local_hour' + "4" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "4" + j, " ");
 
             }
-            if (window.localStorage.getItem('Local_hour' + "5" + j) == null) {
+            if (window.localStorage.getItem('Local_hour' + "5" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "5" + j, " ");
 
             }
-            if (window.localStorage.getItem('Local_hour' + "6" + j) == null) {
+            if (window.localStorage.getItem('Local_hour' + "6" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "6" + j, " ");
 
             }
 
 
-            if (window.localStorage.getItem('Local_minute' + "0" + j) == null) {
+            if (window.localStorage.getItem('Local_minute' + "0" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "0" + j, " ");
             }
 
-            if (window.localStorage.getItem('Local_minute' + "1" + j) == null) {
+            if (window.localStorage.getItem('Local_minute' + "1" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "1" + j, " ");
             }
-            if (window.localStorage.getItem('Local_minute' + "2" + j) == null) {
+            if (window.localStorage.getItem('Local_minute' + "2" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "2" + j, " ");
             }
-            if (window.localStorage.getItem('Local_minute' + "3" + j) == null) {
+            if (window.localStorage.getItem('Local_minute' + "3" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "3" + j, " ");
             }
-            if (window.localStorage.getItem('Local_minute' + "4" + j) == null) {
+            if (window.localStorage.getItem('Local_minute' + "4" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "4" + j, " ");
             }
-            if (window.localStorage.getItem('Local_minute' + "5" + j) == null) {
+            if (window.localStorage.getItem('Local_minute' + "5" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "5" + j, " ");
             }
-            if (window.localStorage.getItem('Local_minute' + "6" + j) == null) {
+            if (window.localStorage.getItem('Local_minute' + "6" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "6" + j, " ");
             }
@@ -151,7 +168,7 @@
             //Using Local_day
             for (i = 0; i < 10; i++)
             {
-                if(window.localStorage.getItem("Local_day" + "0" + i)==" ")
+                if(window.localStorage.getItem("Local_day" + "0" + i)===" ")
                 {
                     index = i;
                     break;
@@ -170,7 +187,7 @@
         else if (e.options[e.selectedIndex].value == "Monday") {
             //Using Local_day
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "1" + i)==" ") {
+                if (window.localStorage.getItem("Local_day" + "1" + i)===" ") {
                     index = i;
                     break;
 
@@ -189,7 +206,7 @@
         else if (e.options[e.selectedIndex].value == "Tuesday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "2" + i)==" ") {
+                if (window.localStorage.getItem("Local_day" + "2" + i)===" ") {
                     index = i;
                     break;
 
@@ -206,7 +223,7 @@
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "3" + i)==" ") {
+                if (window.localStorage.getItem("Local_day" + "3" + i)===" ") {
                     index = i;
                     break;
 
@@ -224,7 +241,7 @@
         else if (e.options[e.selectedIndex].value == "Thursday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "4" + i)==" ") {
+                if (window.localStorage.getItem("Local_day" + "4" + i)===" ") {
                     index = i;
                     break;
 
@@ -242,7 +259,7 @@
         else if (e.options[e.selectedIndex].value == "Friday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "5" + i)==" ") {
+                if (window.localStorage.getItem("Local_day" + "5" + i)===" ") {
                     index = i;
                     break;
 
@@ -259,7 +276,7 @@
         else if (e.options[e.selectedIndex].value == "Saturday") {
 
             for (i = 0; i < 10; i++) {
-                if (window.localStorage.getItem("Local_day" + "6" + i)==" ") {
+                if (window.localStorage.getItem("Local_day" + "6" + i)===" ") {
                     index = i;
                     break;
 
