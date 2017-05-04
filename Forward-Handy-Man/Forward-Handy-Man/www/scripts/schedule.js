@@ -376,18 +376,68 @@
         {
             
       
-                
+            if (window.localStorage.getItem("Local_day" + i + "0") === null)
+            {
+                cell1[i].innerHTML = "";
+            }
+            else
+                {
             cell1[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "0") + '<br />' + window.localStorage.getItem("Local_hour" + i + "0") + ':' + window.localStorage.getItem("Local_minute" + i + "0") + '</a></center>';
+            }
+            if (window.localStorage.getItem("Local_day" + i + "1") === null) {
+                cell2[i].innerHTML = "";
+            }
+            else{
             cell2[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "1") + '<br />' + window.localStorage.getItem("Local_hour" + i + "1") + ':' + window.localStorage.getItem("Local_minute" + i + "1") + '</a></center>';
-            cell3[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "2") + '<br />' + window.localStorage.getItem("Local_hour" + i + "2") + ':' + window.localStorage.getItem("Local_minute" + i + "2") + '</a></center>';
-            cell4[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "3") + '<br />' + window.localStorage.getItem("Local_hour" + i + "3") + ':' + window.localStorage.getItem("Local_minute" + i + "3") + '</a></center>';
-            cell5[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "4") + '<br />' + window.localStorage.getItem("Local_hour" + i + "4") + ':' + window.localStorage.getItem("Local_minute" + i + "4") + '</a></center>';
-            cell6[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "5") + '<br />' + window.localStorage.getItem("Local_hour" + i + "5") + ':' + window.localStorage.getItem("Local_minute" + i + "5") + '</a></center>';
-            cell7[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "6") + '<br />' + window.localStorage.getItem("Local_hour" + i + "6") + ':' + window.localStorage.getItem("Local_minute" + i + "6") + '</a></center>';;
-            cell8[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "7") + '<br />' + window.localStorage.getItem("Local_hour" + i + "7") + ':' + window.localStorage.getItem("Local_minute" + i + "7") + '</a></center>';
-            cell9[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "8") + '<br />' + window.localStorage.getItem("Local_hour" + i + "8") + ':' + window.localStorage.getItem("Local_minute" + i + "8") + '</a></center>';
-            cell10[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "9") + '<br />' + window.localStorage.getItem("Local_hour" + i + "9") + ':' + window.localStorage.getItem("Local_minute" + i + "9") + '</a></center>';
-            
+            }
+            if (window.localStorage.getItem("Local_day" + i + "2") === null) {
+                cell3[i].innerHTML = "";
+            }
+            else {
+                cell3[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "2") + '<br />' + window.localStorage.getItem("Local_hour" + i + "2") + ':' + window.localStorage.getItem("Local_minute" + i + "2") + '</a></center>';
+            }
+            if (window.localStorage.getItem("Local_day" + i + "3") === null) {
+                cell4[i].innerHTML = "";
+            }
+            else {
+                cell4[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "3") + '<br />' + window.localStorage.getItem("Local_hour" + i + "3") + ':' + window.localStorage.getItem("Local_minute" + i + "3") + '</a></center>';
+            }
+            if (window.localStorage.getItem("Local_day" + i + "4") === null) {
+                cell5[i].innerHTML = "";
+            }
+            else {
+                cell5[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "4") + '<br />' + window.localStorage.getItem("Local_hour" + i + "4") + ':' + window.localStorage.getItem("Local_minute" + i + "4") + '</a></center>';
+            }
+            if (window.localStorage.getItem("Local_day" + i + "5") === null) {
+                cell6[i].innerHTML = "";
+            }
+            else {
+                cell6[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "5") + '<br />' + window.localStorage.getItem("Local_hour" + i + "5") + ':' + window.localStorage.getItem("Local_minute" + i + "5") + '</a></center>';
+            }
+            if (window.localStorage.getItem("Local_day" + i + "6") === null) {
+                cell7[i].innerHTML = "";
+            }
+            else {
+                cell7[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "6") + '<br />' + window.localStorage.getItem("Local_hour" + i + "6") + ':' + window.localStorage.getItem("Local_minute" + i + "6") + '</a></center>';;
+            }
+            if (window.localStorage.getItem("Local_day" + i + "7") === null) {
+                cell8[i].innerHTML = "";
+            }
+            else {
+                cell8[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "7") + '<br />' + window.localStorage.getItem("Local_hour" + i + "7") + ':' + window.localStorage.getItem("Local_minute" + i + "7") + '</a></center>';
+            }
+            if (window.localStorage.getItem("Local_day" + i + "8") === null) {
+                cell9[i].innerHTML = "";
+            }
+            else {
+                cell9[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "8") + '<br />' + window.localStorage.getItem("Local_hour" + i + "8") + ':' + window.localStorage.getItem("Local_minute" + i + "8") + '</a></center>';
+            }
+            if (window.localStorage.getItem("Local_day" + i + "9") === null) {
+                cell10[i].innerHTML = "";
+            }
+            else {
+                cell10[i].innerHTML = '<center><a href="#">' + window.localStorage.getItem("Local_day" + i + "9") + '<br />' + window.localStorage.getItem("Local_hour" + i + "9") + ':' + window.localStorage.getItem("Local_minute" + i + "9") + '</a></center>';
+            }
             //cell[1].innerHTML = "NEW CELL2";
         }
     }
