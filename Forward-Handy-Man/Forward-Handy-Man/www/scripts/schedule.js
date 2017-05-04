@@ -49,39 +49,111 @@
             {
 
                 window.localStorage.setItem('Local_day' + "0" + j, " ");
+                
+            }
+            
+            if (window.localStorage.getItem('Local_day' + "1" + j) === null) {
+
                 window.localStorage.setItem('Local_day' + "1" + j, " ");
+
+            }
+
+            if (window.localStorage.getItem('Local_day' + "2" + j) === null) {
+
                 window.localStorage.setItem('Local_day' + "2" + j, " ");
+
+            }
+
+            if (window.localStorage.getItem('Local_day' + "3" + j) === null) {
+
                 window.localStorage.setItem('Local_day' + "3" + j, " ");
+
+            }
+            if (window.localStorage.getItem('Local_day' + "4" + j) === null) {
+
                 window.localStorage.setItem('Local_day' + "4" + j, " ");
+
+            }
+
+            if (window.localStorage.getItem('Local_day' + "5" + j) === null) {
+
                 window.localStorage.setItem('Local_day' + "5" + j, " ");
+
+            }
+            if (window.localStorage.getItem('Local_day' + "6" + j) === null) {
+
                 window.localStorage.setItem('Local_day' + "6" + j, " ");
 
             }
 
+
+
             if (window.localStorage.getItem('Local_hour' + "0" + j) === null) {
 
                 window.localStorage.setItem('Local_hour' + "0" + j, " ");
+                
+            }
+            if (window.localStorage.getItem('Local_hour' + "1" + j) === null) {
+
                 window.localStorage.setItem('Local_hour' + "1" + j, " ");
+
+            }
+            if (window.localStorage.getItem('Local_hour' + "2" + j) === null) {
+
                 window.localStorage.setItem('Local_hour' + "2" + j, " ");
+
+            }
+            if (window.localStorage.getItem('Local_hour' + "3" + j) === null) {
+
                 window.localStorage.setItem('Local_hour' + "3" + j, " ");
+
+            }
+            if (window.localStorage.getItem('Local_hour' + "4" + j) === null) {
+
                 window.localStorage.setItem('Local_hour' + "4" + j, " ");
+
+            }
+            if (window.localStorage.getItem('Local_hour' + "5" + j) === null) {
+
                 window.localStorage.setItem('Local_hour' + "5" + j, " ");
+
+            }
+            if (window.localStorage.getItem('Local_hour' + "6" + j) === null) {
+
                 window.localStorage.setItem('Local_hour' + "6" + j, " ");
 
             }
 
+
             if (window.localStorage.getItem('Local_minute' + "0" + j) === null) {
 
                 window.localStorage.setItem('Local_minute' + "0" + j, " ");
-                window.localStorage.setItem('Local_minute' + "1" + j, " ");
-                window.localStorage.setItem('Local_minute' + "2" + j, " ");
-                window.localStorage.setItem('Local_minute' + "3" + j, " ");
-                window.localStorage.setItem('Local_minute' + "4" + j, " ");
-                window.localStorage.setItem('Local_minute' + "5" + j, " ");
-                window.localStorage.setItem('Local_minute' + "6" + j, " ");
-
             }
 
+            if (window.localStorage.getItem('Local_minute' + "1" + j) === null) {
+
+                window.localStorage.setItem('Local_minute' + "1" + j, " ");
+            }
+            if (window.localStorage.getItem('Local_minute' + "2" + j) === null) {
+
+                window.localStorage.setItem('Local_minute' + "2" + j, " ");
+            }
+            if (window.localStorage.getItem('Local_minute' + "3" + j) === null) {
+
+                window.localStorage.setItem('Local_minute' + "3" + j, " ");
+            }
+            if (window.localStorage.getItem('Local_minute' + "4" + j) === null) {
+
+                window.localStorage.setItem('Local_minute' + "4" + j, " ");
+            }
+            if (window.localStorage.getItem('Local_minute' + "5" + j) === null) {
+
+                window.localStorage.setItem('Local_minute' + "5" + j, " ");
+            }
+            if (window.localStorage.getItem('Local_minute' + "6" + j) === null) {
+
+                window.localStorage.setItem('Local_minute' + "6" + j, " ");
+            }
         }
 
 
@@ -300,7 +372,7 @@
         var cell10 = [row10.insertCell(0), row10.insertCell(1), row10.insertCell(2), row10.insertCell(3), row10.insertCell(4), row10.insertCell(5), row10.insertCell(6)];
         
 
-        for (i = 0; i < 6; i++)
+        for (i = 0; i < 7; i++)
         {
             
       
