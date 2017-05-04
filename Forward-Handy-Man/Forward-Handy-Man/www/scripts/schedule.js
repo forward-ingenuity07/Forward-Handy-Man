@@ -26,24 +26,6 @@
     document.getElementById('ButSub').onclick=function()
     {
 
-        if (window.localStorage.getItem('stand') != '5')
-        {
-            
-                /*for (j = 0; j < 10; j++)
-                    {
-                    window.localStorage.setItem('Local_day'+"0"+j,null);
-                    window.localStorage.setItem('Local_day' + "1" + j,null);
-                    window.localStorage.setItem('Local_day' + "2" + j,null);
-                    window.localStorage.setItem('Local_day' + "3" + j,null);
-                    window.localStorage.setItem('Local_day' + "4" + j,null);
-                    window.localStorage.setItem('Local_day' + "5" + j,null);
-                    window.localStorage.setItem('Local_day' + "6" + j,null);
-                
-                }*/
-            window.localStorage.clear();
-
-            window.localStorage.setItem('stand', '5');
-        }
         //var days = [["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""]];
         
       /*  for (i = 0; i < 10; i++)
