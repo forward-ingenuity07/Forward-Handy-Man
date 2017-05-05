@@ -4,7 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    if (window.localStorage.getItem('stand') != '10') {
+    if (window.localStorage.getItem('stand') != '12') {
 
         /*for (j = 0; j < 10; j++)
             {
@@ -19,7 +19,7 @@
         }*/
         window.localStorage.clear();
 
-        window.localStorage.setItem('stand', '10');
+        window.localStorage.setItem('stand', '12');
     }
 
     obj = new Object(["Val"]);
@@ -27,7 +27,7 @@
     {
 
         //var days = [["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""]];
-        
+        var set=0;
       /*  for (i = 0; i < 10; i++)
         {
             days[0][i] = window.localStorage.getItem("Local_day" + "0" + i);
@@ -173,7 +173,6 @@
 
                 }
                 
-
             }
            
             window.localStorage.setItem("Local_day" + "0" + index, Naam.value);
@@ -290,7 +289,47 @@
         }
   
         window.localStorage.setItem('tabe', '1');
-        
+        if (index == 0)
+        {
+           /* for (i = 0; i < 10; i++)
+            {
+                if(window.localStorage.getItem("Local_day" + "0" + i)!==null)
+                {
+
+
+                }
+
+            }will add this once I sort out a sorting algorithm, then I can remove empty rows once emptiness is detected*/
+
+            window.localStorage.setItem('ro1', '1');
+        }
+        else if (index == 1) {
+            window.localStorage.setItem('ro2', '1');
+        }
+        else if (index == 2) {
+            window.localStorage.setItem('ro3', '1');
+        }
+        else if (index == 3) {
+            window.localStorage.setItem('ro4', '1');
+        }
+        else if (index == 4) {
+            window.localStorage.setItem('ro5', '1');
+        }
+        else if (index == 5) {
+            window.localStorage.setItem('ro6', '1');
+        }
+        else if (index == 6) {
+            window.localStorage.setItem('ro7', '1');
+        }
+        else if (index == 7) {
+            window.localStorage.setItem('ro8', '1');
+        }
+        else if (index == 8) {
+            window.localStorage.setItem('ro9', '1');
+        }
+        else if (index == 9) {
+            window.localStorage.setItem('ro10', '1');
+        }
     //Naam = document.getElementById('Naming');
    // window.localStorage.setItem('Naming', Naam.value);
    // Arr[1] = { value: document.getElementById('Naming') };
@@ -334,41 +373,69 @@
     if(window.localStorage.getItem('tabe')=='1')
     {
         var table = document.getElementById("schedule_table");
-        var row1 = table.insertRow(1);
-        var row2 = table.insertRow(2);
-        var row3 = table.insertRow(3);
-        var row4 = table.insertRow(4);
-        var row5 = table.insertRow(5);
-        var row6 = table.insertRow(6);
-        var row7 = table.insertRow(7);
-        var row8 = table.insertRow(8);
-        var row9 = table.insertRow(9);
-        var row10 = table.insertRow(10);
-        
-        var cell1 = [row1.insertCell(0), row1.insertCell(1), row1.insertCell(2), row1.insertCell(3), row1.insertCell(4), row1.insertCell(5), row1.insertCell(6)];
-        var cell2 = [row2.insertCell(0), row2.insertCell(1), row2.insertCell(2), row2.insertCell(3), row2.insertCell(4), row2.insertCell(5), row2.insertCell(6)];
-        var cell3 = [row3.insertCell(0), row3.insertCell(1), row3.insertCell(2), row3.insertCell(3), row3.insertCell(4), row3.insertCell(5), row3.insertCell(6)];
-        var cell4 = [row4.insertCell(0), row4.insertCell(1), row4.insertCell(2), row4.insertCell(3), row4.insertCell(4), row4.insertCell(5), row4.insertCell(6)];
-        var cell5 = [row5.insertCell(0), row5.insertCell(1), row5.insertCell(2), row5.insertCell(3), row5.insertCell(4), row5.insertCell(5), row5.insertCell(6)];
-        var cell6 = [row6.insertCell(0), row6.insertCell(1), row6.insertCell(2), row6.insertCell(3), row6.insertCell(4), row6.insertCell(5), row6.insertCell(6)];
-        var cell7 = [row7.insertCell(0), row7.insertCell(1), row7.insertCell(2), row7.insertCell(3), row7.insertCell(4), row7.insertCell(5), row7.insertCell(6)];
-        var cell8 = [row8.insertCell(0), row8.insertCell(1), row8.insertCell(2), row8.insertCell(3), row8.insertCell(4), row8.insertCell(5), row8.insertCell(6)];
-        var cell9 = [row9.insertCell(0), row9.insertCell(1), row9.insertCell(2), row9.insertCell(3), row9.insertCell(4), row9.insertCell(5), row9.insertCell(6)];
-        var cell10 = [row10.insertCell(0), row10.insertCell(1), row10.insertCell(2), row10.insertCell(3), row10.insertCell(4), row10.insertCell(5), row10.insertCell(6)];
+        if (window.localStorage.getItem('ro1') == '1') {
+            var row1 = table.insertRow(1);
+            var cell1 = [row1.insertCell(0), row1.insertCell(1), row1.insertCell(2), row1.insertCell(3), row1.insertCell(4), row1.insertCell(5), row1.insertCell(6)];
+            row1.className = "danger";
+
+        }
+        if (window.localStorage.getItem('ro2') == '1') {
+            var row2 = table.insertRow(2);
+            var cell2 = [row2.insertCell(0), row2.insertCell(1), row2.insertCell(2), row2.insertCell(3), row2.insertCell(4), row2.insertCell(5), row2.insertCell(6)];
+            row2.className = "warning";
+
+
+        }
+        if (window.localStorage.getItem('ro3') == '1') {
+            var row3 = table.insertRow(3);
+            var cell3 = [row3.insertCell(0), row3.insertCell(1), row3.insertCell(2), row3.insertCell(3), row3.insertCell(4), row3.insertCell(5), row3.insertCell(6)];
+            row3.className = "success";
+
+
+        }
+        if (window.localStorage.getItem('ro4') == '1') {
+            var row4 = table.insertRow(4);
+            var cell4 = [row4.insertCell(0), row4.insertCell(1), row4.insertCell(2), row4.insertCell(3), row4.insertCell(4), row4.insertCell(5), row4.insertCell(6)];
+            row4.className = "danger";
+
+
+        }
+        if (window.localStorage.getItem('ro5') == '1') {
+            var row5 = table.insertRow(5);
+            var cell5 = [row5.insertCell(0), row5.insertCell(1), row5.insertCell(2), row5.insertCell(3), row5.insertCell(4), row5.insertCell(5), row5.insertCell(6)];
+            row5.className = "warning";
+        }
+        if (window.localStorage.getItem('ro6') == '1') {
+            var row6 = table.insertRow(6);
+            var cell6 = [row6.insertCell(0), row6.insertCell(1), row6.insertCell(2), row6.insertCell(3), row6.insertCell(4), row6.insertCell(5), row6.insertCell(6)];
+            row6.className = "success";
+        }
+        if (window.localStorage.getItem('ro7') == '1') {
+            var row7 = table.insertRow(7);
+            var cell7 = [row7.insertCell(0), row7.insertCell(1), row7.insertCell(2), row7.insertCell(3), row7.insertCell(4), row7.insertCell(5), row7.insertCell(6)];
+            row7.className = "danger";
+
+        }
+        if (window.localStorage.getItem('ro8') == '1') {
+            var row8 = table.insertRow(8);
+            var cell8 = [row8.insertCell(0), row8.insertCell(1), row8.insertCell(2), row8.insertCell(3), row8.insertCell(4), row8.insertCell(5), row8.insertCell(6)];
+            row8.className = "warning";
+        }
+        if (window.localStorage.getItem('ro9') == '1') {
+            var row9 = table.insertRow(9);
+            var cell9 = [row9.insertCell(0), row9.insertCell(1), row9.insertCell(2), row9.insertCell(3), row9.insertCell(4), row9.insertCell(5), row9.insertCell(6)];
+            row9.className = "success";
+        }
+        if (window.localStorage.getItem('ro10') == '1') {
+            var row10 = table.insertRow(10);
+            var cell10 = [row10.insertCell(0), row10.insertCell(1), row10.insertCell(2), row10.insertCell(3), row10.insertCell(4), row10.insertCell(5), row10.insertCell(6)];
+            row10.className = "danger";
+
+        }
 
         /*var row = [table.insertRow[0], table.insertRow[1], table.insertRow[2], table.insertRow[3], table.insertRow[4], table.insertRow[5], table.insertRow[6], table.insertRow[7], table.insertRow[8], table.insertRow[9]];
         var cell = [[row[0].insertCell(0), row[0].insertCell(1), row[0].insertCell(2), row[0].insertCell(3), row[0].insertCell(4), row[0].insertCell(5), row[0].insertCell(6)], [row[1].insertCell(0), row[1].insertCell(1), row[1].insertCell(2), row[1].insertCell(3), row[1].insertCell(4), row[1].insertCell(5), row[1].insertCell(6)], [row[2].insertCell(0), row[2].insertCell(1), row[2].insertCell(2), row[2].insertCell(3), row[2].insertCell(4), row[2].insertCell(5), row[2].insertCell(6)], [row[3].insertCell(0), row[3].insertCell(1), row[3].insertCell(2), row[3].insertCell(3), row[3].insertCell(4), row[3].insertCell(5), row[3].insertCell(6)], [row[4].insertCell(0), row[4].insertCell(1), row[4].insertCell(2), row[4].insertCell(3), row[4].insertCell(4), row[4].insertCell(5), row[4].insertCell(6)], [row[4].insertCell(0), row[4].insertCell(1), row[4].insertCell(2), row[4].insertCell(3), row[4].insertCell(4), row[4].insertCell(5), row[4].insertCell(6)], [row[5].insertCell(0), row[5].insertCell(1), row[5].insertCell(2), row[5].insertCell(3), row[5].insertCell(4), row[5].insertCell(5), row[5].insertCell(6)], [row[6].insertCell(0), row[6].insertCell(1), row[6].insertCell(2), row[6].insertCell(3), row[6].insertCell(4), row[6].insertCell(5), row[6].insertCell(6)], [row[7].insertCell(0), row[7].insertCell(1), row[7].insertCell(2), row[7].insertCell(3), row[7].insertCell(4), row[7].insertCell(5), row[7].insertCell(6)], [row[8].insertCell(0), row[8].insertCell(1), row[8].insertCell(2), row[8].insertCell(3), row[8].insertCell(4), row[8].insertCell(5), row[8].insertCell(6)], [row[9].insertCell(0), row[9].insertCell(1), row[9].insertCell(2), row[9].insertCell(3), row[9].insertCell(4), row[9].insertCell(5), row[9].insertCell(6)]];
         */
-        row1.className = "danger";
-        row2.className = "warning";
-        row3.className = "success";
-        row4.className = "danger";
-        row5.className = "warning";
-        row6.className = "success";
-        row7.className = "danger";
-        row8.className = "warning";
-        row9.className = "success";
-        row10.className = "danger";
         
         for (i = 0; i < 7; i++)
         {
