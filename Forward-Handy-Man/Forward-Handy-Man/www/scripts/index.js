@@ -71,18 +71,27 @@
 
 
         if (hous < 12) {
-            window.localStorage.setItem('count', '1');
-            Speak("Chipili","Good morning Mr Kafwilo");
+            if(window.localStorage.getItem('greet')!='1')
+                {
+                window.localStorage.setItem('greet', '1');
+            Speak("Chipili", "Good morning Mr Kafwilo");
+        }
         }
         else if (hous >= 12 && hous < 18) {
-            window.localStorage.setItem('count', '1');
-            //swal('Good afternoon Mr Kafwilo');
-            Speak("Chipili", "Good afternoon Mr Kafwilo");
+            if (window.localStorage.getItem('greet') != '2') {
+                window.localStorage.setItem('greet', '2');
+                //window.localStorage.setItem('count', '1');
+                //swal('Good afternoon Mr Kafwilo');
+                Speak("Chipili", "Good afternoon Mr Kafwilo");
+            }
         }
         else if (hous >= 18) {
-            window.localStorage.setItem('count', '1');
-            swal('Good evening Mr Kafwilo');
-            Speak("Chipili", "Good evening Mr Kafwilo");
+            if (window.localStorage.getItem('greet') != '3') {
+                window.localStorage.setItem('greet', '3');
+                //window.localStorage.setItem('count', '1');
+                //swal('Good evening Mr Kafwilo');
+                Speak("Chipili", "Good evening Mr Kafwilo");
+            }
         }
        // }
         
