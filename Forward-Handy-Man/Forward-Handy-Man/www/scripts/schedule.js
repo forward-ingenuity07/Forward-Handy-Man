@@ -299,7 +299,7 @@
             //sorting algorithm
             sel = 0;
             while (window.localStorage.getItem("Local_day" + "2" + sel) !== null) {
-                del = sel + 2;
+                del = sel + 1;
                 if (window.localStorage.getItem("Local_day" + "2" + del) !== null) {
                     if (window.localStorage.getItem("Local_hour" + "2" + sel) > window.localStorage.getItem("Local_hour" + "2" + del)) {
                         //change entry
@@ -354,7 +354,7 @@
             //sorting algorithm
             sel = 0;
             while (window.localStorage.getItem("Local_day" + "3" + sel) !== null) {
-                del = sel + 2;
+                del = sel + 1;
                 if (window.localStorage.getItem("Local_day" + "3" + del) !== null) {
                     if (window.localStorage.getItem("Local_hour" + "3" + sel) > window.localStorage.getItem("Local_hour" + "3" + del)) {
                         //change entry
@@ -410,7 +410,7 @@
             //sorting algorithm
             sel = 0;
             while (window.localStorage.getItem("Local_day" + "4" + sel) !== null) {
-                del = sel + 2;
+                del = sel + 1;
                 if (window.localStorage.getItem("Local_day" + "4" + del) !== null) {
                     if (window.localStorage.getItem("Local_hour" + "4" + sel) > window.localStorage.getItem("Local_hour" + "4" + del)) {
                         //change entry
@@ -467,7 +467,7 @@
             //sorting algorithm
             sel = 0;
             while (window.localStorage.getItem("Local_day" + "5" + sel) !== null) {
-                del = sel + 2;
+                del = sel + 1;
                 if (window.localStorage.getItem("Local_day" + "5" + del) !== null) {
                     if (window.localStorage.getItem("Local_hour" + "5" + sel) > window.localStorage.getItem("Local_hour" + "5" + del)) {
                         //change entry
@@ -523,7 +523,7 @@
             //sorting algorithm
             sel = 0;
             while (window.localStorage.getItem("Local_day" + "6" + sel) !== null) {
-                del = sel + 2;
+                del = sel + 1;
                 if (window.localStorage.getItem("Local_day" + "6" + del) !== null) {
                     if (window.localStorage.getItem("Local_hour" + "6" + sel) > window.localStorage.getItem("Local_hour" + "6" + del)) {
                         //change entry
