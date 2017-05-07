@@ -219,6 +219,7 @@
                 }
                 sel++;
             }
+            //End of sorting
            // window.localStorage.setItem("Arr.day1", Naam.value);
         }
             
@@ -237,6 +238,44 @@
             window.localStorage.setItem("Local_day"+"1" + index, Naam.value);
             window.localStorage.setItem("Local_hour" + "1" + index, h.options[h.selectedIndex].value);
             window.localStorage.setItem("Local_minute" + "1" + index, m.options[m.selectedIndex].value);
+
+            //sorting algorithm
+            sel = 0;
+            while (window.localStorage.getItem("Local_day" + "1" + sel) !== null) {
+                del = sel + 1;
+                if (window.localStorage.getItem("Local_day" + "1" + del) !== null) {
+                    if (window.localStorage.getItem("Local_hour" + "1" + sel) > window.localStorage.getItem("Local_hour" + "1" + del)) {
+                        //change entry
+                        temp = window.localStorage.getItem("Local_day" + "1" + sel);
+                        temp1 = window.localStorage.getItem("Local_day" + "1" + del);
+
+                        window.localStorage.setItem("Local_day" + "1" + sel, temp1);
+                        window.localStorage.setItem("Local_day" + "1" + del, temp);
+
+
+                        //change hours
+                        temp = window.localStorage.getItem("Local_hour" + "1" + sel);
+                        temp1 = window.localStorage.getItem("Local_hour" + "1" + del);
+
+                        window.localStorage.setItem("Local_hour" + "1" + sel, temp1);
+                        window.localStorage.setItem("Local_hour" + "1" + del, temp);
+
+                        //change minutes
+                        temp = window.localStorage.getItem("Local_minute" + "1" + sel);
+                        temp1 = window.localStorage.getItem("Local_minute" + "1" + del);
+
+                        window.localStorage.setItem("Local_minute" + "1" + sel, temp1);
+                        window.localStorage.setItem("Local_minute" + "1" + del, temp);
+
+                    }
+
+
+                }
+                sel++;
+            }
+            //End of sorting
+
+
 
            // window.localStorage.setItem("Arr.day2", Naam.value);
         }
@@ -257,6 +296,44 @@
             window.localStorage.setItem("Local_hour" + "2" + index, h.options[h.selectedIndex].value);
             window.localStorage.setItem("Local_minute" + "2" + index, m.options[m.selectedIndex].value);
 
+            //sorting algorithm
+            sel = 0;
+            while (window.localStorage.getItem("Local_day" + "2" + sel) !== null) {
+                del = sel + 2;
+                if (window.localStorage.getItem("Local_day" + "2" + del) !== null) {
+                    if (window.localStorage.getItem("Local_hour" + "2" + sel) > window.localStorage.getItem("Local_hour" + "2" + del)) {
+                        //change entry
+                        temp = window.localStorage.getItem("Local_day" + "2" + sel);
+                        temp1 = window.localStorage.getItem("Local_day" + "2" + del);
+
+                        window.localStorage.setItem("Local_day" + "2" + sel, temp1);
+                        window.localStorage.setItem("Local_day" + "2" + del, temp);
+
+
+                        //change hours
+                        temp = window.localStorage.getItem("Local_hour" + "2" + sel);
+                        temp1 = window.localStorage.getItem("Local_hour" + "2" + del);
+
+                        window.localStorage.setItem("Local_hour" + "2" + sel, temp1);
+                        window.localStorage.setItem("Local_hour" + "2" + del, temp);
+
+                        //change minutes
+                        temp = window.localStorage.getItem("Local_minute" + "2" + sel);
+                        temp1 = window.localStorage.getItem("Local_minute" + "2" + del);
+
+                        window.localStorage.setItem("Local_minute" + "2" + sel, temp1);
+                        window.localStorage.setItem("Local_minute" + "2" + del, temp);
+
+                    }
+
+
+                }
+                sel++;
+            }
+            //End of sorting
+
+
+
            // window.localStorage.setItem("Arr.day3", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Wednesday") {
@@ -273,6 +350,44 @@
             window.localStorage.setItem("Local_day" + "3" + index, Naam.value);
             window.localStorage.setItem("Local_hour" + "3" + index, h.options[h.selectedIndex].value);
             window.localStorage.setItem("Local_minute" + "3" + index, m.options[m.selectedIndex].value);
+
+            //sorting algorithm
+            sel = 0;
+            while (window.localStorage.getItem("Local_day" + "3" + sel) !== null) {
+                del = sel + 2;
+                if (window.localStorage.getItem("Local_day" + "3" + del) !== null) {
+                    if (window.localStorage.getItem("Local_hour" + "3" + sel) > window.localStorage.getItem("Local_hour" + "3" + del)) {
+                        //change entry
+                        temp = window.localStorage.getItem("Local_day" + "3" + sel);
+                        temp1 = window.localStorage.getItem("Local_day" + "3" + del);
+
+                        window.localStorage.setItem("Local_day" + "3" + sel, temp1);
+                        window.localStorage.setItem("Local_day" + "3" + del, temp);
+
+
+                        //change hours
+                        temp = window.localStorage.getItem("Local_hour" + "3" + sel);
+                        temp1 = window.localStorage.getItem("Local_hour" + "3" + del);
+
+                        window.localStorage.setItem("Local_hour" + "3" + sel, temp1);
+                        window.localStorage.setItem("Local_hour" + "3" + del, temp);
+
+                        //change minutes
+                        temp = window.localStorage.getItem("Local_minute" + "3" + sel);
+                        temp1 = window.localStorage.getItem("Local_minute" + "3" + del);
+
+                        window.localStorage.setItem("Local_minute" + "3" + sel, temp1);
+                        window.localStorage.setItem("Local_minute" + "3" + del, temp);
+
+                    }
+
+
+                }
+                sel++;
+            }
+            //End of sorting
+
+
 
            // window.localStorage.setItem("Arr.day4", Naam.value);
         }
@@ -292,6 +407,44 @@
             window.localStorage.setItem("Local_hour" + "4" + index, h.options[h.selectedIndex].value);
             window.localStorage.setItem("Local_minute" + "4" + index, m.options[m.selectedIndex].value);
 
+            //sorting algorithm
+            sel = 0;
+            while (window.localStorage.getItem("Local_day" + "4" + sel) !== null) {
+                del = sel + 2;
+                if (window.localStorage.getItem("Local_day" + "4" + del) !== null) {
+                    if (window.localStorage.getItem("Local_hour" + "4" + sel) > window.localStorage.getItem("Local_hour" + "4" + del)) {
+                        //change entry
+                        temp = window.localStorage.getItem("Local_day" + "4" + sel);
+                        temp1 = window.localStorage.getItem("Local_day" + "4" + del);
+
+                        window.localStorage.setItem("Local_day" + "4" + sel, temp1);
+                        window.localStorage.setItem("Local_day" + "4" + del, temp);
+
+
+                        //change hours
+                        temp = window.localStorage.getItem("Local_hour" + "4" + sel);
+                        temp1 = window.localStorage.getItem("Local_hour" + "4" + del);
+
+                        window.localStorage.setItem("Local_hour" + "4" + sel, temp1);
+                        window.localStorage.setItem("Local_hour" + "4" + del, temp);
+
+                        //change minutes
+                        temp = window.localStorage.getItem("Local_minute" + "4" + sel);
+                        temp1 = window.localStorage.getItem("Local_minute" + "4" + del);
+
+                        window.localStorage.setItem("Local_minute" + "4" + sel, temp1);
+                        window.localStorage.setItem("Local_minute" + "4" + del, temp);
+
+                    }
+
+
+                }
+                sel++;
+            }
+            //End of sorting
+
+
+
            // window.localStorage.setItem("Arr.day5", Naam.value);
         }
         else if (e.options[e.selectedIndex].value == "Friday") {
@@ -309,7 +462,47 @@
             window.localStorage.setItem("Local_day" + "5" + index, Naam.value);
             window.localStorage.setItem("Local_hour" + "5" + index, h.options[h.selectedIndex].value);
             window.localStorage.setItem("Local_minute" + "5" + index, m.options[m.selectedIndex].value);
- //           window.localStorage.setItem("Arr.day6", Naam.value);
+            //           window.localStorage.setItem("Arr.day6", Naam.value);
+
+            //sorting algorithm
+            sel = 0;
+            while (window.localStorage.getItem("Local_day" + "5" + sel) !== null) {
+                del = sel + 2;
+                if (window.localStorage.getItem("Local_day" + "5" + del) !== null) {
+                    if (window.localStorage.getItem("Local_hour" + "5" + sel) > window.localStorage.getItem("Local_hour" + "5" + del)) {
+                        //change entry
+                        temp = window.localStorage.getItem("Local_day" + "5" + sel);
+                        temp1 = window.localStorage.getItem("Local_day" + "5" + del);
+
+                        window.localStorage.setItem("Local_day" + "5" + sel, temp1);
+                        window.localStorage.setItem("Local_day" + "5" + del, temp);
+
+
+                        //change hours
+                        temp = window.localStorage.getItem("Local_hour" + "5" + sel);
+                        temp1 = window.localStorage.getItem("Local_hour" + "5" + del);
+
+                        window.localStorage.setItem("Local_hour" + "5" + sel, temp1);
+                        window.localStorage.setItem("Local_hour" + "5" + del, temp);
+
+                        //change minutes
+                        temp = window.localStorage.getItem("Local_minute" + "5" + sel);
+                        temp1 = window.localStorage.getItem("Local_minute" + "5" + del);
+
+                        window.localStorage.setItem("Local_minute" + "5" + sel, temp1);
+                        window.localStorage.setItem("Local_minute" + "5" + del, temp);
+
+                    }
+
+
+                }
+                sel++;
+            }
+            //End of sorting
+
+
+
+
         }
         else if (e.options[e.selectedIndex].value == "Saturday") {
 
@@ -327,6 +520,42 @@
             window.localStorage.setItem("Local_hour" + "6" + index, h.options[h.selectedIndex].value);
             window.localStorage.setItem("Local_minute" + "6" + index, m.options[m.selectedIndex].value);
             //window.localStorage.setItem("Arr.day7", Naam.value);
+            //sorting algorithm
+            sel = 0;
+            while (window.localStorage.getItem("Local_day" + "6" + sel) !== null) {
+                del = sel + 2;
+                if (window.localStorage.getItem("Local_day" + "6" + del) !== null) {
+                    if (window.localStorage.getItem("Local_hour" + "6" + sel) > window.localStorage.getItem("Local_hour" + "6" + del)) {
+                        //change entry
+                        temp = window.localStorage.getItem("Local_day" + "6" + sel);
+                        temp1 = window.localStorage.getItem("Local_day" + "6" + del);
+
+                        window.localStorage.setItem("Local_day" + "6" + sel, temp1);
+                        window.localStorage.setItem("Local_day" + "6" + del, temp);
+
+
+                        //change hours
+                        temp = window.localStorage.getItem("Local_hour" + "6" + sel);
+                        temp1 = window.localStorage.getItem("Local_hour" + "6" + del);
+
+                        window.localStorage.setItem("Local_hour" + "6" + sel, temp1);
+                        window.localStorage.setItem("Local_hour" + "6" + del, temp);
+
+                        //change minutes
+                        temp = window.localStorage.getItem("Local_minute" + "6" + sel);
+                        temp1 = window.localStorage.getItem("Local_minute" + "6" + del);
+
+                        window.localStorage.setItem("Local_minute" + "6" + sel, temp1);
+                        window.localStorage.setItem("Local_minute" + "6" + del, temp);
+
+                    }
+
+
+                }
+                sel++;
+            }
+            //End of sorting
+
         }
   
         window.localStorage.setItem('tabe', '1');
