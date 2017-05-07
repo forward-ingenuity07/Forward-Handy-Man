@@ -4,7 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    if (window.localStorage.getItem('stand') != '49') {
+    if (window.localStorage.getItem('stand') != '57') {
 
         /*for (j = 0; j < 10; j++)
             {
@@ -19,7 +19,7 @@
         }*/
         window.localStorage.clear();
 
-        window.localStorage.setItem('stand', '49');
+        window.localStorage.setItem('stand', '57');
     }
 
     obj = new Object(["Val"]);
@@ -186,6 +186,7 @@
 
             //sorting algorithm
             do {
+                sel = 0;
                 swap = 0;
                 while (window.localStorage.getItem("Local_day" + "0" + sel) !== null) {
                     del = sel + 1;
