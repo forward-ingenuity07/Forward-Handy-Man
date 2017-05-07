@@ -933,7 +933,7 @@
 
                 
 
-                cell1[i].innerHTML = '<center><a href="#" role="button" data-target=".cell_modal">' + window.localStorage.getItem("Local_day" + i + "0") + '<br />' + window.localStorage.getItem("Local_hour" + i + "0") + ':' + window.localStorage.getItem("Local_minute" + i + "0") + '</a></center>';
+                cell1[i].innerHTML = '<center><a href="#" role="button" data-target=".bs-example-modal-lg" data-toggle="collapse" aria-expanded="false">' + window.localStorage.getItem("Local_day" + i + "0") + '<br />' + window.localStorage.getItem("Local_hour" + i + "0") + ':' + window.localStorage.getItem("Local_minute" + i + "0") + '</a></center>';
             }
             if (window.localStorage.getItem("Local_day" + i + "1") === null) {
                 //cell2[i].innerHTML = "";
