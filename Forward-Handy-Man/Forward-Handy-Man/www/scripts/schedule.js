@@ -4,7 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    if (window.localStorage.getItem('stand') != '35') {
+    if (window.localStorage.getItem('stand') != '49') {
 
         /*for (j = 0; j < 10; j++)
             {
@@ -19,7 +19,7 @@
         }*/
         window.localStorage.clear();
 
-        window.localStorage.setItem('stand', '35');
+        window.localStorage.setItem('stand', '49');
     }
 
     obj = new Object(["Val"]);
@@ -28,7 +28,8 @@
 
         //var days = [["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", "", "", ""]];
         var set=0;
-        var sel=0;
+        var sel = 0;
+        var swap;
       /*  for (i = 0; i < 10; i++)
         {
             days[0][i] = window.localStorage.getItem("Local_day" + "0" + i);
@@ -184,41 +185,42 @@
             window.localStorage.setItem("Local_minute" + "0" + index, m.options[m.selectedIndex].value);
 
             //sorting algorithm
-            while(window.localStorage.getItem("Local_day" + "0" + sel)!==null)
-            {
-                del = sel + 1;
-                if(window.localStorage.getItem("Local_day" + "0" + del)!==null)
-                {
-                    if(window.localStorage.getItem("Local_hour" + "0" + sel)>window.localStorage.getItem("Local_hour" + "0" + del))
-                    {
-                        //change entry
-                        temp = window.localStorage.getItem("Local_day" + "0" + sel);
-                        temp1 = window.localStorage.getItem("Local_day" + "0" + del);
+            do {
+                swap = 0;
+                while (window.localStorage.getItem("Local_day" + "0" + sel) !== null) {
+                    del = sel + 1;
+                    if (window.localStorage.getItem("Local_day" + "0" + del) !== null) {
+                        if (window.localStorage.getItem("Local_hour" + "0" + sel) > window.localStorage.getItem("Local_hour" + "0" + del)) {
+                            swap = 1;
+                            //change entry
+                            temp = window.localStorage.getItem("Local_day" + "0" + sel);
+                            temp1 = window.localStorage.getItem("Local_day" + "0" + del);
 
-                        window.localStorage.setItem("Local_day" + "0" + sel,temp1);
-                        window.localStorage.setItem("Local_day" + "0" + del, temp);
+                            window.localStorage.setItem("Local_day" + "0" + sel, temp1);
+                            window.localStorage.setItem("Local_day" + "0" + del, temp);
 
 
-                        //change hours
-                        temp = window.localStorage.getItem("Local_hour" + "0" + sel);
-                        temp1 = window.localStorage.getItem("Local_hour" + "0" + del);
+                            //change hours
+                            temp = window.localStorage.getItem("Local_hour" + "0" + sel);
+                            temp1 = window.localStorage.getItem("Local_hour" + "0" + del);
 
-                        window.localStorage.setItem("Local_hour" + "0" + sel, temp1);
-                        window.localStorage.setItem("Local_hour" + "0" + del, temp);
+                            window.localStorage.setItem("Local_hour" + "0" + sel, temp1);
+                            window.localStorage.setItem("Local_hour" + "0" + del, temp);
 
-                        //change minutes
-                        temp = window.localStorage.getItem("Local_minute" + "0" + sel);
-                        temp1 = window.localStorage.getItem("Local_minute" + "0" + del);
+                            //change minutes
+                            temp = window.localStorage.getItem("Local_minute" + "0" + sel);
+                            temp1 = window.localStorage.getItem("Local_minute" + "0" + del);
 
-                        window.localStorage.setItem("Local_minute" + "0" + sel, temp1);
-                        window.localStorage.setItem("Local_minute" + "0" + del, temp);
+                            window.localStorage.setItem("Local_minute" + "0" + sel, temp1);
+                            window.localStorage.setItem("Local_minute" + "0" + del, temp);
+
+                        }
+
 
                     }
-
-
+                    sel++;
                 }
-                sel++;
-            }
+            } while (swap == 1);
             //End of sorting
            // window.localStorage.setItem("Arr.day1", Naam.value);
         }
@@ -240,39 +242,42 @@
             window.localStorage.setItem("Local_minute" + "1" + index, m.options[m.selectedIndex].value);
 
             //sorting algorithm
-            sel = 0;
-            while (window.localStorage.getItem("Local_day" + "1" + sel) !== null) {
-                del = sel + 1;
-                if (window.localStorage.getItem("Local_day" + "1" + del) !== null) {
-                    if (window.localStorage.getItem("Local_hour" + "1" + sel) > window.localStorage.getItem("Local_hour" + "1" + del)) {
-                        //change entry
-                        temp = window.localStorage.getItem("Local_day" + "1" + sel);
-                        temp1 = window.localStorage.getItem("Local_day" + "1" + del);
+            do {
+                swap = 0;
+                sel = 0;
+                while (window.localStorage.getItem("Local_day" + "1" + sel) !== null) {
+                    del = sel + 1;
+                    if (window.localStorage.getItem("Local_day" + "1" + del) !== null) {
+                        if (window.localStorage.getItem("Local_hour" + "1" + sel) > window.localStorage.getItem("Local_hour" + "1" + del)) {
+                            //change entry
+                            temp = window.localStorage.getItem("Local_day" + "1" + sel);
+                            temp1 = window.localStorage.getItem("Local_day" + "1" + del);
 
-                        window.localStorage.setItem("Local_day" + "1" + sel, temp1);
-                        window.localStorage.setItem("Local_day" + "1" + del, temp);
+                            window.localStorage.setItem("Local_day" + "1" + sel, temp1);
+                            window.localStorage.setItem("Local_day" + "1" + del, temp);
 
 
-                        //change hours
-                        temp = window.localStorage.getItem("Local_hour" + "1" + sel);
-                        temp1 = window.localStorage.getItem("Local_hour" + "1" + del);
+                            //change hours
+                            temp = window.localStorage.getItem("Local_hour" + "1" + sel);
+                            temp1 = window.localStorage.getItem("Local_hour" + "1" + del);
 
-                        window.localStorage.setItem("Local_hour" + "1" + sel, temp1);
-                        window.localStorage.setItem("Local_hour" + "1" + del, temp);
+                            window.localStorage.setItem("Local_hour" + "1" + sel, temp1);
+                            window.localStorage.setItem("Local_hour" + "1" + del, temp);
 
-                        //change minutes
-                        temp = window.localStorage.getItem("Local_minute" + "1" + sel);
-                        temp1 = window.localStorage.getItem("Local_minute" + "1" + del);
+                            //change minutes
+                            temp = window.localStorage.getItem("Local_minute" + "1" + sel);
+                            temp1 = window.localStorage.getItem("Local_minute" + "1" + del);
 
-                        window.localStorage.setItem("Local_minute" + "1" + sel, temp1);
-                        window.localStorage.setItem("Local_minute" + "1" + del, temp);
+                            window.localStorage.setItem("Local_minute" + "1" + sel, temp1);
+                            window.localStorage.setItem("Local_minute" + "1" + del, temp);
+
+                        }
+
 
                     }
-
-
+                    sel++;
                 }
-                sel++;
-            }
+            } while (swap == 1);
             //End of sorting
 
 
@@ -297,39 +302,45 @@
             window.localStorage.setItem("Local_minute" + "2" + index, m.options[m.selectedIndex].value);
 
             //sorting algorithm
-            sel = 0;
-            while (window.localStorage.getItem("Local_day" + "2" + sel) !== null) {
-                del = sel + 1;
-                if (window.localStorage.getItem("Local_day" + "2" + del) !== null) {
-                    if (window.localStorage.getItem("Local_hour" + "2" + sel) > window.localStorage.getItem("Local_hour" + "2" + del)) {
-                        //change entry
-                        temp = window.localStorage.getItem("Local_day" + "2" + sel);
-                        temp1 = window.localStorage.getItem("Local_day" + "2" + del);
+            do {
+                sel = 0;
+                swap = 0;
+                while (window.localStorage.getItem("Local_day" + "2" + sel) !== null) {
+                    del = sel + 1;
+                    
+                    if (window.localStorage.getItem("Local_day" + "2" + del) !== null) {
+                        if (window.localStorage.getItem("Local_hour" + "2" + sel) > window.localStorage.getItem("Local_hour" + "2" + del)) {
+                            //change entry
+                            swap = 1;
 
-                        window.localStorage.setItem("Local_day" + "2" + sel, temp1);
-                        window.localStorage.setItem("Local_day" + "2" + del, temp);
+                            temp = window.localStorage.getItem("Local_day" + "2" + sel);
+                            temp1 = window.localStorage.getItem("Local_day" + "2" + del);
+
+                            window.localStorage.setItem("Local_day" + "2" + sel, temp1);
+                            window.localStorage.setItem("Local_day" + "2" + del, temp);
 
 
-                        //change hours
-                        temp = window.localStorage.getItem("Local_hour" + "2" + sel);
-                        temp1 = window.localStorage.getItem("Local_hour" + "2" + del);
+                            //change hours
+                            temp = window.localStorage.getItem("Local_hour" + "2" + sel);
+                            temp1 = window.localStorage.getItem("Local_hour" + "2" + del);
 
-                        window.localStorage.setItem("Local_hour" + "2" + sel, temp1);
-                        window.localStorage.setItem("Local_hour" + "2" + del, temp);
+                            window.localStorage.setItem("Local_hour" + "2" + sel, temp1);
+                            window.localStorage.setItem("Local_hour" + "2" + del, temp);
 
-                        //change minutes
-                        temp = window.localStorage.getItem("Local_minute" + "2" + sel);
-                        temp1 = window.localStorage.getItem("Local_minute" + "2" + del);
+                            //change minutes
+                            temp = window.localStorage.getItem("Local_minute" + "2" + sel);
+                            temp1 = window.localStorage.getItem("Local_minute" + "2" + del);
 
-                        window.localStorage.setItem("Local_minute" + "2" + sel, temp1);
-                        window.localStorage.setItem("Local_minute" + "2" + del, temp);
+                            window.localStorage.setItem("Local_minute" + "2" + sel, temp1);
+                            window.localStorage.setItem("Local_minute" + "2" + del, temp);
+                        }
+
+
 
                     }
-
-
+                    sel++;
                 }
-                sel++;
-            }
+            } while (swap == 1);
             //End of sorting
 
 
@@ -352,39 +363,43 @@
             window.localStorage.setItem("Local_minute" + "3" + index, m.options[m.selectedIndex].value);
 
             //sorting algorithm
-            sel = 0;
-            while (window.localStorage.getItem("Local_day" + "3" + sel) !== null) {
-                del = sel + 1;
-                if (window.localStorage.getItem("Local_day" + "3" + del) !== null) {
-                    if (window.localStorage.getItem("Local_hour" + "3" + sel) > window.localStorage.getItem("Local_hour" + "3" + del)) {
-                        //change entry
-                        temp = window.localStorage.getItem("Local_day" + "3" + sel);
-                        temp1 = window.localStorage.getItem("Local_day" + "3" + del);
+            do {
+                sel = 0;
+                swap = 0;
+                while (window.localStorage.getItem("Local_day" + "3" + sel) !== null) {
+                    del = sel + 1;
+                    if (window.localStorage.getItem("Local_day" + "3" + del) !== null) {
+                        if (window.localStorage.getItem("Local_hour" + "3" + sel) > window.localStorage.getItem("Local_hour" + "3" + del)) {
+                            //change entry
+                            swap = 1;
+                            temp = window.localStorage.getItem("Local_day" + "3" + sel);
+                            temp1 = window.localStorage.getItem("Local_day" + "3" + del);
 
-                        window.localStorage.setItem("Local_day" + "3" + sel, temp1);
-                        window.localStorage.setItem("Local_day" + "3" + del, temp);
+                            window.localStorage.setItem("Local_day" + "3" + sel, temp1);
+                            window.localStorage.setItem("Local_day" + "3" + del, temp);
 
 
-                        //change hours
-                        temp = window.localStorage.getItem("Local_hour" + "3" + sel);
-                        temp1 = window.localStorage.getItem("Local_hour" + "3" + del);
+                            //change hours
+                            temp = window.localStorage.getItem("Local_hour" + "3" + sel);
+                            temp1 = window.localStorage.getItem("Local_hour" + "3" + del);
 
-                        window.localStorage.setItem("Local_hour" + "3" + sel, temp1);
-                        window.localStorage.setItem("Local_hour" + "3" + del, temp);
+                            window.localStorage.setItem("Local_hour" + "3" + sel, temp1);
+                            window.localStorage.setItem("Local_hour" + "3" + del, temp);
 
-                        //change minutes
-                        temp = window.localStorage.getItem("Local_minute" + "3" + sel);
-                        temp1 = window.localStorage.getItem("Local_minute" + "3" + del);
+                            //change minutes
+                            temp = window.localStorage.getItem("Local_minute" + "3" + sel);
+                            temp1 = window.localStorage.getItem("Local_minute" + "3" + del);
 
-                        window.localStorage.setItem("Local_minute" + "3" + sel, temp1);
-                        window.localStorage.setItem("Local_minute" + "3" + del, temp);
+                            window.localStorage.setItem("Local_minute" + "3" + sel, temp1);
+                            window.localStorage.setItem("Local_minute" + "3" + del, temp);
+
+                        }
+
 
                     }
-
-
+                    sel++;
                 }
-                sel++;
-            }
+            } while (swap == 1);
             //End of sorting
 
 
@@ -408,39 +423,43 @@
             window.localStorage.setItem("Local_minute" + "4" + index, m.options[m.selectedIndex].value);
 
             //sorting algorithm
-            sel = 0;
-            while (window.localStorage.getItem("Local_day" + "4" + sel) !== null) {
-                del = sel + 1;
-                if (window.localStorage.getItem("Local_day" + "4" + del) !== null) {
-                    if (window.localStorage.getItem("Local_hour" + "4" + sel) > window.localStorage.getItem("Local_hour" + "4" + del)) {
-                        //change entry
-                        temp = window.localStorage.getItem("Local_day" + "4" + sel);
-                        temp1 = window.localStorage.getItem("Local_day" + "4" + del);
+            do {
+                swap = 0;
+                sel = 0;
+                while (window.localStorage.getItem("Local_day" + "4" + sel) !== null) {
+                    del = sel + 1;
+                    if (window.localStorage.getItem("Local_day" + "4" + del) !== null) {
+                        if (window.localStorage.getItem("Local_hour" + "4" + sel) > window.localStorage.getItem("Local_hour" + "4" + del)) {
+                            //change entry
+                            swap = 1;
+                            temp = window.localStorage.getItem("Local_day" + "4" + sel);
+                            temp1 = window.localStorage.getItem("Local_day" + "4" + del);
 
-                        window.localStorage.setItem("Local_day" + "4" + sel, temp1);
-                        window.localStorage.setItem("Local_day" + "4" + del, temp);
+                            window.localStorage.setItem("Local_day" + "4" + sel, temp1);
+                            window.localStorage.setItem("Local_day" + "4" + del, temp);
 
 
-                        //change hours
-                        temp = window.localStorage.getItem("Local_hour" + "4" + sel);
-                        temp1 = window.localStorage.getItem("Local_hour" + "4" + del);
+                            //change hours
+                            temp = window.localStorage.getItem("Local_hour" + "4" + sel);
+                            temp1 = window.localStorage.getItem("Local_hour" + "4" + del);
 
-                        window.localStorage.setItem("Local_hour" + "4" + sel, temp1);
-                        window.localStorage.setItem("Local_hour" + "4" + del, temp);
+                            window.localStorage.setItem("Local_hour" + "4" + sel, temp1);
+                            window.localStorage.setItem("Local_hour" + "4" + del, temp);
 
-                        //change minutes
-                        temp = window.localStorage.getItem("Local_minute" + "4" + sel);
-                        temp1 = window.localStorage.getItem("Local_minute" + "4" + del);
+                            //change minutes
+                            temp = window.localStorage.getItem("Local_minute" + "4" + sel);
+                            temp1 = window.localStorage.getItem("Local_minute" + "4" + del);
 
-                        window.localStorage.setItem("Local_minute" + "4" + sel, temp1);
-                        window.localStorage.setItem("Local_minute" + "4" + del, temp);
+                            window.localStorage.setItem("Local_minute" + "4" + sel, temp1);
+                            window.localStorage.setItem("Local_minute" + "4" + del, temp);
+
+                        }
+
 
                     }
-
-
+                    sel++;
                 }
-                sel++;
-            }
+            } while (swap == 1);
             //End of sorting
 
 
@@ -465,39 +484,43 @@
             //           window.localStorage.setItem("Arr.day6", Naam.value);
 
             //sorting algorithm
-            sel = 0;
-            while (window.localStorage.getItem("Local_day" + "5" + sel) !== null) {
-                del = sel + 1;
-                if (window.localStorage.getItem("Local_day" + "5" + del) !== null) {
-                    if (window.localStorage.getItem("Local_hour" + "5" + sel) > window.localStorage.getItem("Local_hour" + "5" + del)) {
-                        //change entry
-                        temp = window.localStorage.getItem("Local_day" + "5" + sel);
-                        temp1 = window.localStorage.getItem("Local_day" + "5" + del);
+            do {
+                swap = 0;
+                sel = 0;
+                while (window.localStorage.getItem("Local_day" + "5" + sel) !== null) {
+                    del = sel + 1;
+                    if (window.localStorage.getItem("Local_day" + "5" + del) !== null) {
+                        if (window.localStorage.getItem("Local_hour" + "5" + sel) > window.localStorage.getItem("Local_hour" + "5" + del)) {
+                            //change entry
+                            swap = 1;
+                            temp = window.localStorage.getItem("Local_day" + "5" + sel);
+                            temp1 = window.localStorage.getItem("Local_day" + "5" + del);
 
-                        window.localStorage.setItem("Local_day" + "5" + sel, temp1);
-                        window.localStorage.setItem("Local_day" + "5" + del, temp);
+                            window.localStorage.setItem("Local_day" + "5" + sel, temp1);
+                            window.localStorage.setItem("Local_day" + "5" + del, temp);
 
 
-                        //change hours
-                        temp = window.localStorage.getItem("Local_hour" + "5" + sel);
-                        temp1 = window.localStorage.getItem("Local_hour" + "5" + del);
+                            //change hours
+                            temp = window.localStorage.getItem("Local_hour" + "5" + sel);
+                            temp1 = window.localStorage.getItem("Local_hour" + "5" + del);
 
-                        window.localStorage.setItem("Local_hour" + "5" + sel, temp1);
-                        window.localStorage.setItem("Local_hour" + "5" + del, temp);
+                            window.localStorage.setItem("Local_hour" + "5" + sel, temp1);
+                            window.localStorage.setItem("Local_hour" + "5" + del, temp);
 
-                        //change minutes
-                        temp = window.localStorage.getItem("Local_minute" + "5" + sel);
-                        temp1 = window.localStorage.getItem("Local_minute" + "5" + del);
+                            //change minutes
+                            temp = window.localStorage.getItem("Local_minute" + "5" + sel);
+                            temp1 = window.localStorage.getItem("Local_minute" + "5" + del);
 
-                        window.localStorage.setItem("Local_minute" + "5" + sel, temp1);
-                        window.localStorage.setItem("Local_minute" + "5" + del, temp);
+                            window.localStorage.setItem("Local_minute" + "5" + sel, temp1);
+                            window.localStorage.setItem("Local_minute" + "5" + del, temp);
+
+                        }
+
 
                     }
-
-
+                    sel++;
                 }
-                sel++;
-            }
+            } while (swap == 1);
             //End of sorting
 
 
@@ -521,39 +544,43 @@
             window.localStorage.setItem("Local_minute" + "6" + index, m.options[m.selectedIndex].value);
             //window.localStorage.setItem("Arr.day7", Naam.value);
             //sorting algorithm
-            sel = 0;
-            while (window.localStorage.getItem("Local_day" + "6" + sel) !== null) {
-                del = sel + 1;
-                if (window.localStorage.getItem("Local_day" + "6" + del) !== null) {
-                    if (window.localStorage.getItem("Local_hour" + "6" + sel) > window.localStorage.getItem("Local_hour" + "6" + del)) {
-                        //change entry
-                        temp = window.localStorage.getItem("Local_day" + "6" + sel);
-                        temp1 = window.localStorage.getItem("Local_day" + "6" + del);
+            do {
+                swap = 0;
+                sel = 0;
+                while (window.localStorage.getItem("Local_day" + "6" + sel) !== null) {
+                    del = sel + 1;
+                    if (window.localStorage.getItem("Local_day" + "6" + del) !== null) {
+                        if (window.localStorage.getItem("Local_hour" + "6" + sel) > window.localStorage.getItem("Local_hour" + "6" + del)) {
+                            swap = 1;
+                            //change entry
+                            temp = window.localStorage.getItem("Local_day" + "6" + sel);
+                            temp1 = window.localStorage.getItem("Local_day" + "6" + del);
 
-                        window.localStorage.setItem("Local_day" + "6" + sel, temp1);
-                        window.localStorage.setItem("Local_day" + "6" + del, temp);
+                            window.localStorage.setItem("Local_day" + "6" + sel, temp1);
+                            window.localStorage.setItem("Local_day" + "6" + del, temp);
 
 
-                        //change hours
-                        temp = window.localStorage.getItem("Local_hour" + "6" + sel);
-                        temp1 = window.localStorage.getItem("Local_hour" + "6" + del);
+                            //change hours
+                            temp = window.localStorage.getItem("Local_hour" + "6" + sel);
+                            temp1 = window.localStorage.getItem("Local_hour" + "6" + del);
 
-                        window.localStorage.setItem("Local_hour" + "6" + sel, temp1);
-                        window.localStorage.setItem("Local_hour" + "6" + del, temp);
+                            window.localStorage.setItem("Local_hour" + "6" + sel, temp1);
+                            window.localStorage.setItem("Local_hour" + "6" + del, temp);
 
-                        //change minutes
-                        temp = window.localStorage.getItem("Local_minute" + "6" + sel);
-                        temp1 = window.localStorage.getItem("Local_minute" + "6" + del);
+                            //change minutes
+                            temp = window.localStorage.getItem("Local_minute" + "6" + sel);
+                            temp1 = window.localStorage.getItem("Local_minute" + "6" + del);
 
-                        window.localStorage.setItem("Local_minute" + "6" + sel, temp1);
-                        window.localStorage.setItem("Local_minute" + "6" + del, temp);
+                            window.localStorage.setItem("Local_minute" + "6" + sel, temp1);
+                            window.localStorage.setItem("Local_minute" + "6" + del, temp);
+
+                        }
+
 
                     }
-
-
+                    sel++;
                 }
-                sel++;
-            }
+            } while (swap == 1);
             //End of sorting
 
         }
