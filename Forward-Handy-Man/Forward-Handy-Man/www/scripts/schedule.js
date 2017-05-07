@@ -4,7 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    if (window.localStorage.getItem('stand') != '21') {
+    if (window.localStorage.getItem('stand') != '28') {
 
         /*for (j = 0; j < 10; j++)
             {
@@ -19,7 +19,7 @@
         }*/
         window.localStorage.clear();
 
-        window.localStorage.setItem('stand', '21');
+        window.localStorage.setItem('stand', '28');
     }
 
     obj = new Object(["Val"]);
