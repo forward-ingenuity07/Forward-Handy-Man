@@ -4,7 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    if (window.localStorage.getItem('stand') != '28') {
+    if (window.localStorage.getItem('stand') != '35') {
 
         /*for (j = 0; j < 10; j++)
             {
@@ -19,7 +19,7 @@
         }*/
         window.localStorage.clear();
 
-        window.localStorage.setItem('stand', '28');
+        window.localStorage.setItem('stand', '35');
     }
 
     obj = new Object(["Val"]);
@@ -161,8 +161,8 @@
         var h = document.getElementById("hour_chosen");
         var m = document.getElementById("minute_chosen");
         var Naam = document.getElementById('Naming');
-        var temp;
-        var temp1;
+        var temp="";
+        var temp1="";
         var del;
         //var Arr = { day1: "", day2: "", day3: "", day4: "", day5: "", day6: "", day7: "",then8:""};
         if (e.options[e.selectedIndex].value == "Sunday") {
@@ -195,23 +195,23 @@
                         temp = window.localStorage.getItem("Local_day" + "0" + sel);
                         temp1 = window.localStorage.getItem("Local_day" + "0" + del);
 
-                        window.localStorage.setItem("Local_day" + "0" + sel,temp1.value);
-                        window.localStorage.setItem("Local_day" + "0" + del, temp.value);
+                        window.localStorage.setItem("Local_day" + "0" + sel,temp1);
+                        window.localStorage.setItem("Local_day" + "0" + del, temp);
 
 
                         //change hours
                         temp = window.localStorage.getItem("Local_hour" + "0" + sel);
                         temp1 = window.localStorage.getItem("Local_hour" + "0" + del);
 
-                        window.localStorage.setItem("Local_hour" + "0" + sel, temp1.value);
-                        window.localStorage.setItem("Local_hour" + "0" + del, temp.value);
+                        window.localStorage.setItem("Local_hour" + "0" + sel, temp1);
+                        window.localStorage.setItem("Local_hour" + "0" + del, temp);
 
                         //change minutes
                         temp = window.localStorage.getItem("Local_minute" + "0" + sel);
                         temp1 = window.localStorage.getItem("Local_minute" + "0" + del);
 
-                        window.localStorage.setItem("Local_minute" + "0" + sel, temp1.value);
-                        window.localStorage.setItem("Local_minute" + "0" + del, temp.value);
+                        window.localStorage.setItem("Local_minute" + "0" + sel, temp1);
+                        window.localStorage.setItem("Local_minute" + "0" + del, temp);
 
                     }
 
