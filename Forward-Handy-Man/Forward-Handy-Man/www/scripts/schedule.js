@@ -27,7 +27,7 @@
 
 
         }
-        var outer = 0;
+        outer = 0;
         while (window.localStorage.getItem("Local_day" + "1" + outer) !== null) {
 
             window.localStorage.removeItem("Local_day" + "1" + outer);
@@ -35,7 +35,7 @@
 
 
         }
-        var outer = 0;
+        outer = 0;
         while (window.localStorage.getItem("Local_day" + "2" + outer) !== null) {
 
             window.localStorage.removeItem("Local_day" + "2" + outer);
@@ -43,7 +43,7 @@
 
 
         }
-        var outer = 0;
+        outer = 0;
         while (window.localStorage.getItem("Local_day" + "3" + outer) !== null) {
 
             window.localStorage.removeItem("Local_day" + "3" + outer);
@@ -52,7 +52,7 @@
 
 
         }
-        var outer = 0;
+        outer = 0;
         while (window.localStorage.getItem("Local_day" + "4" + outer) !== null) {
 
             window.localStorage.removeItem("Local_day" + "4" + outer);
@@ -60,7 +60,7 @@
 
 
         }
-        var outer = 0;
+        outer = 0;
         while (window.localStorage.getItem("Local_day" + "5" + outer) !== null) {
 
             window.localStorage.removeItem("Local_day" + "5" + outer);
@@ -68,7 +68,7 @@
 
 
         }
-        var outer = 0;
+        outer = 0;
         while (window.localStorage.getItem("Local_day" + "6" + outer) !== null) {
 
             window.localStorage.removeItem("Local_day" + "6" + outer);
