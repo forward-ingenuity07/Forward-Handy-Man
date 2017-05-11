@@ -4,7 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    if (window.localStorage.getItem('stand') != '71') {
+    document.getElementById("ButClear").onclick=function() {
 
         /*for (j = 0; j < 10; j++)
             {
@@ -17,9 +17,66 @@
             window.localStorage.setItem('Local_day' + "6" + j,null);
         
         }*/
-        window.localStorage.clear();
+        var inner=0;
+        var outer=0;
 
-        window.localStorage.setItem('stand', '71');
+        while(window.localStorage.getItem("Local_day"+"0"+outer)!==null)
+        {
+            window.localStorage.removeItem("Local_day" + "0" + outer);
+            outer++;
+
+
+        }
+        var outer = 0;
+        while (window.localStorage.getItem("Local_day" + "1" + outer) !== null) {
+
+            window.localStorage.removeItem("Local_day" + "1" + outer);
+            outer++;
+
+
+        }
+        var outer = 0;
+        while (window.localStorage.getItem("Local_day" + "2" + outer) !== null) {
+
+            window.localStorage.removeItem("Local_day" + "2" + outer);
+            outer++;
+
+
+        }
+        var outer = 0;
+        while (window.localStorage.getItem("Local_day" + "3" + outer) !== null) {
+
+            window.localStorage.removeItem("Local_day" + "3" + outer);
+            outer++;
+
+
+
+        }
+        var outer = 0;
+        while (window.localStorage.getItem("Local_day" + "4" + outer) !== null) {
+
+            window.localStorage.removeItem("Local_day" + "4" + outer);
+            outer++;
+
+
+        }
+        var outer = 0;
+        while (window.localStorage.getItem("Local_day" + "5" + outer) !== null) {
+
+            window.localStorage.removeItem("Local_day" + "5" + outer);
+            outer++;
+
+
+        }
+        var outer = 0;
+        while (window.localStorage.getItem("Local_day" + "6" + outer) !== null) {
+
+            window.localStorage.removeItem("Local_day" + "6" + outer);
+            outer++;
+
+
+        }
+       
     }
 
     obj = new Object(["Val"]);
