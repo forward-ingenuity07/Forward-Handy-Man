@@ -1126,6 +1126,6 @@ document.getElementById('ButPlus').onclick = function () {
             Speak("Javascript", "Enter an event below");
         }, 2000);
     }*/);
-    window.location.replace("schedule.html");
+    
 }
 
