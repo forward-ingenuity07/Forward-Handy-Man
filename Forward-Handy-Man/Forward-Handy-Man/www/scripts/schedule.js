@@ -4,6 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
+    window.location.replace(url);
     document.getElementById("ButClear").onclick=function() {
 
         /*for (j = 0; j < 10; j++)
