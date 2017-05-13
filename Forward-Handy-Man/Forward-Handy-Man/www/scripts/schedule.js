@@ -5,7 +5,7 @@
     var chosen_time;
     var chosen_title;
     
-    document.getElementById("ButClear").onclick=function() {
+    document.getElementById("Agreeing").onclick = function () {
 
         /*for (j = 0; j < 10; j++)
             {
