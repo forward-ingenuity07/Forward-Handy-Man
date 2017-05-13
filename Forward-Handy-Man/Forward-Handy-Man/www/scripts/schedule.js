@@ -4,7 +4,7 @@
     var chosen_day;
     var chosen_time;
     var chosen_title;
-    window.location.replace("schedule.html");
+    
     document.getElementById("ButClear").onclick=function() {
 
         /*for (j = 0; j < 10; j++)
@@ -1126,5 +1126,6 @@ document.getElementById('ButPlus').onclick = function () {
             Speak("Javascript", "Enter an event below");
         }, 2000);
     }*/);
+    window.location.replace("schedule.html");
 }
 
