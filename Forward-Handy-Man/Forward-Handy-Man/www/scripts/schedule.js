@@ -76,7 +76,7 @@
 
 
         }
-       
+        window.location.reload();
     }
 
     obj = new Object(["Val"]);
