@@ -83,6 +83,16 @@
 
 
         }
+        window.localStorage.setItem('ro1', '0');
+        window.localStorage.setItem('ro2', '0');
+        window.localStorage.setItem('ro3', '0');
+        window.localStorage.setItem('ro4', '0');
+        window.localStorage.setItem('ro5', '0');
+        window.localStorage.setItem('ro6', '0');
+        window.localStorage.setItem('ro7', '0');
+        window.localStorage.setItem('ro8', '0');
+        window.localStorage.setItem('ro9', '0');
+        window.localStorage.setItem('ro10', '0');
         window.location.reload();
     }
 
