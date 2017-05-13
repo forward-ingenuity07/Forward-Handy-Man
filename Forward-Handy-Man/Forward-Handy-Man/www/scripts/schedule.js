@@ -5,6 +5,12 @@
     var chosen_time;
     var chosen_title;
     
+    document.getElementById("Noing").onclick = function () {
+
+        window.location.reload();
+
+    }
+
     document.getElementById("Agreeing").onclick = function () {
 
         /*for (j = 0; j < 10; j++)
